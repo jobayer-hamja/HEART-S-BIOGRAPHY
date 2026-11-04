@@ -1,0 +1,68 @@
+/* Distinct, darker editorial art direction for the six Memory Edition cards. */
+.occasion-grid .occasion-card{--card-ink:#fff8f0;--card-muted:rgba(255,248,240,.76);--card-edge:rgba(227,197,151,.38);--card-sheen:rgba(255,248,240,.22);color:var(--card-ink);border-color:var(--card-edge);background:linear-gradient(145deg,var(--card-top),var(--card-bottom));box-shadow:0 16px 34px rgba(39,17,26,.19),inset 0 1px 0 rgba(255,255,255,.16);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease,filter .3s ease}
+.occasion-grid .occasion-card:before{background:linear-gradient(145deg,var(--tint1),var(--tint2) 52%,rgba(255,255,255,.04));opacity:.62}
+.occasion-grid .occasion-card:after{background:radial-gradient(ellipse,var(--card-sheen),transparent 68%)}
+.occasion-grid .occasion-card:hover,.occasion-grid .occasion-card:focus-visible{transform:translateY(-6px);border-color:rgba(255,235,203,.8);box-shadow:0 24px 45px rgba(39,17,26,.26),inset 0 1px 0 rgba(255,255,255,.23);filter:saturate(1.08);outline:none}
+.occasion-grid .occasion-label{display:flex;align-items:center;gap:6px;color:var(--card-accent);font-size:7.98px;letter-spacing:.16em}
+.occasion-grid .occasion-label:before{content:var(--card-mark);font-size:13.68px;line-height:1}
+.occasion-grid .occasion-card h2{color:var(--card-ink);text-shadow:0 2px 14px rgba(15,8,12,.24)}
+.occasion-grid .occasion-card p{color:var(--card-muted)}
+.occasion-grid .occasion-card .explore{color:var(--card-accent);border-top:1px solid rgba(255,248,240,.2);width:100%;justify-content:space-between;padding-top:8px}
+.occasion-grid .occasion-card .book-cover{color:#fffaf3;box-shadow:inset 3px 0 5px rgba(255,255,255,.28),inset 0 1px rgba(255,255,255,.36),0 10px 25px rgba(19,7,13,.28)}
+.occasion-grid .occasion-card .cover-illustration{border:1px solid rgba(255,255,255,.23);box-shadow:inset 0 1px rgba(255,255,255,.35),0 7px 16px rgba(15,8,12,.19)}
+
+/* 01 Birthday — burnt coral, candlelight, and celebratory gold. */
+.occasion-grid .birthday{--card-top:#351510;--card-bottom:#55221E;--card-accent:#f2d494;--card-mark:"✳";--tint1:rgba(231,130,78,.5);--tint2:rgba(242,186,103,.32);--card-sheen:rgba(255,210,125,.31)}
+.occasion-grid .birthday .book{--cover:linear-gradient(155deg,#3c1d16,#a94f32 58%,#d98b48);--art:radial-gradient(circle at 17% 20%,#f4d886 0 3px,transparent 4px),radial-gradient(circle at 78% 28%,#f1a5a1 0 3px,transparent 4px),radial-gradient(circle at 27% 70%,#e9be8a 0 3px,transparent 4px),radial-gradient(circle at 83% 78%,#d7a9c2 0 3px,transparent 4px),linear-gradient(145deg,#e4a052,#8d3829 68%,#3c1d16)}
+.occasion-grid .birthday .cover-illustration:before{width:26px;height:34px;left:15px;top:16px;border-radius:50% 50% 45% 45%;background:radial-gradient(circle at 35% 30%,#fff0c0,#dfa95e 76%);box-shadow:26px 8px 0 -3px #df8b83,48px -2px 0 -4px #cf9bb4}
+.occasion-grid .birthday .cover-illustration:after{width:37px;height:22px;left:31px;top:60px;border-radius:4px;background:linear-gradient(180deg,#f7dcac 0 34%,#c96868 35% 54%,#f1ca91 55%);box-shadow:0 -8px 0 -6px #fff0c0,0 -16px 0 -7px #f4d886}
+.occasion-grid .birthday:hover .book{transform:translateY(-3px) rotate(-2deg)}
+
+/* 02 Anniversary — midnight blue, antique champagne, and heirloom elegance. */
+.occasion-grid .anniversary{--card-top:#0D1422;--card-bottom:#1A283F;--card-accent:#ead7a6;--card-mark:"∞";--tint1:rgba(92,126,171,.48);--tint2:rgba(190,163,116,.27);--card-sheen:rgba(221,205,160,.27)}
+.occasion-grid .anniversary .book{--cover:linear-gradient(155deg,#192337,#405b7e 59%,#9c8866);--art:radial-gradient(ellipse at 50% 35%,rgba(240,220,179,.88),transparent 12%),radial-gradient(ellipse at 50% 82%,#586f8e 0 24%,transparent 25%),linear-gradient(145deg,#c2a981,#405b7e 65%,#1c273a)}
+.occasion-grid .anniversary .cover-illustration:before{width:35px;height:52px;left:19px;top:28px;border-radius:60% 40% 50% 50%;background:linear-gradient(145deg,#e8c89a,#a97570);box-shadow:24px 4px 0 -4px #d2a08e}
+.occasion-grid .anniversary .cover-illustration:after{width:54px;height:54px;left:26px;top:20px;border:1px solid rgba(245,218,175,.76);background:transparent;box-shadow:0 0 0 5px rgba(245,218,175,.1)}
+.occasion-grid .anniversary:hover .book{transform:translateY(-3px) rotate(-1deg)}
+
+/* 03 Love Story — expressive berry, soft rose, and warm champagne. */
+.occasion-grid .love-story{--card-top:#190E17;--card-bottom:#37202D;--card-accent:#e8c2aa;--card-mark:"✧";--tint1:rgba(158,95,126,.46);--tint2:rgba(222,158,168,.28);--card-sheen:rgba(245,204,180,.24)}
+.occasion-grid .love-story .book{--cover:linear-gradient(155deg,#281a29,#75445e 58%,#c07b86);--art:radial-gradient(ellipse at 50% 30%,#f4dcc8 0 13%,transparent 14%),radial-gradient(ellipse at 50% 76%,#81516b 0 27%,transparent 28%),linear-gradient(145deg,#d7a68f,#75445e 65%,#332432)}
+.occasion-grid .love-story .cover-illustration:before{width:31px;height:47px;left:18px;top:25px;border-radius:60% 40% 50% 50%;background:linear-gradient(145deg,#f1d2ad,#a76778);box-shadow:24px 4px 0 -4px #d39a9a}
+.occasion-grid .love-story .cover-illustration:after{width:55px;height:55px;left:24px;top:20px;border:1px solid rgba(245,218,195,.72);background:transparent;box-shadow:0 0 0 5px rgba(245,218,195,.1)}
+.occasion-grid .love-story:hover .book{transform:translateY(-3px) rotate(-3deg)}
+
+/* Wedding — midnight evergreen, pearl, and soft champagne. */
+
+/* Wedding — midnight evergreen, pearl, and soft champagne. */
+.occasion-grid .wedding{--card-top:#0D1411;--card-bottom:#1C2A21;--card-accent:#eadab7;--card-mark:"✦";--tint1:rgba(128,150,125,.37);--tint2:rgba(207,181,130,.25);--card-sheen:rgba(244,225,185,.24)}
+.occasion-grid .wedding .book{--cover:linear-gradient(155deg,#1c2624,#51624d 57%,#a59470);--art:radial-gradient(ellipse at 50% 30%,#f5ead4 0 12%,transparent 13%),radial-gradient(ellipse at 50% 65%,#e4cfaa 0 19%,transparent 20%),linear-gradient(145deg,#e1d1b6,#68765e 61%,#273530)}
+.occasion-grid .wedding .cover-illustration:before{width:28px;height:28px;left:25px;top:25px;border:1px solid #e5d0a4;border-radius:50%;background:transparent;box-shadow:18px 0 0 -1px rgba(255,255,255,.05),18px 0 0 0 #e5d0a4}
+.occasion-grid .wedding .cover-illustration:after{width:64px;height:48px;left:10px;top:52px;border-radius:50% 50% 4px 4px;background:radial-gradient(circle at 20% 35%,#f1e3c9 0 4px,transparent 5px),radial-gradient(circle at 55% 18%,#e6d1a8 0 5px,transparent 6px),radial-gradient(circle at 82% 38%,#f1e3c9 0 4px,transparent 5px);box-shadow:none}
+.occasion-grid .wedding:hover .book{transform:translateY(-3px) rotate(0deg)}
+
+/* 05 Friendship — deep lagoon teal, coral, and sunlit paper. */
+.occasion-grid .friendship{--card-top:#0D1F27;--card-bottom:#133641;--card-accent:#f0c6a0;--card-mark:"✦";--tint1:rgba(77,161,173,.48);--tint2:rgba(226,151,112,.3);--card-sheen:rgba(149,221,222,.26)}
+.occasion-grid .friendship .book{--cover:linear-gradient(155deg,#18323c,#317b88 58%,#bf7d5d);--art:radial-gradient(circle at 30% 34%,#f0d9a7 0 8%,transparent 9%),radial-gradient(circle at 70% 63%,#e7b890 0 11%,transparent 12%),linear-gradient(145deg,#d5a77c,#317b88 63%,#1d414b)}
+.occasion-grid .friendship .cover-illustration:before{width:30px;height:38px;left:12px;top:22px;border:2px solid #e9d6ad;border-radius:3px;background:linear-gradient(145deg,#d6a77e,#8b6e84);box-shadow:31px 14px 0 -1px #78917d,31px 14px 0 1px #e9d6ad;transform:rotate(-8deg)}
+.occasion-grid .friendship .cover-illustration:after{width:38px;height:31px;left:42px;top:55px;border:2px solid #e9d6ad;border-radius:3px;background:linear-gradient(145deg,#efd09b,#71907a);transform:rotate(8deg);box-shadow:0 6px 12px rgba(22,14,27,.25)}
+.occasion-grid .friendship:hover .book{transform:translateY(-3px) rotate(-1deg)}
+
+/* 06 Just Because — layered indigo and ochre scrapbook collage. */
+.occasion-grid .just-because{--card-top:#141320;--card-bottom:#242238;--card-accent:#e6ca90;--card-mark:"✎";--tint1:rgba(116,112,172,.45);--tint2:rgba(204,151,118,.3);--card-sheen:rgba(181,175,226,.27)}
+.occasion-grid .just-because .book{--cover:linear-gradient(155deg,#201e32,#494a70 57%,#a77e62);--art:linear-gradient(135deg,#d7b58d 0 28%,transparent 29%),linear-gradient(45deg,transparent 0 47%,#7893a0 48% 73%,transparent 74%),linear-gradient(150deg,#c08c77,#514967 66%,#242235)}
+.occasion-grid .just-because .cover-illustration:before{width:34px;height:42px;left:9px;top:13px;border:2px solid #f1debd;border-radius:2px;background:linear-gradient(145deg,#b5c1a0,#61766d);box-shadow:32px 17px 0 -2px #86586e,32px 17px 0 0 #f1debd;transform:rotate(-11deg)}
+.occasion-grid .just-because .cover-illustration:after{width:36px;height:33px;left:44px;top:57px;border:2px solid #f1debd;border-radius:2px;background:linear-gradient(145deg,#e2bd8f,#7d6979);transform:rotate(9deg);box-shadow:0 6px 12px rgba(22,14,27,.25)}
+.occasion-grid .just-because .book{transform:rotate(-5deg) rotateY(-11deg)}
+.occasion-grid .just-because:hover .book{transform:translateY(-4px) rotate(-1deg) rotateY(-7deg)}
+.occasion-grid .theme-chips span{border-color:rgba(235,215,180,.3);background:rgba(255,255,255,.08);color:#f4e7d1}
+.occasion-grid .occasion-actions{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;margin-top:auto;padding-top:8px;border-top:1px solid rgba(255,248,240,.2);position:relative;z-index:2}
+.occasion-grid .occasion-card .occasion-actions .explore{flex:1;width:auto;margin:0;padding:0;border:0;justify-content:flex-start;text-decoration:none}
+.occasion-grid .live-demo{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:6px 9px;border:1px solid rgba(255,235,203,.42);border-radius:999px;background:rgba(255,248,240,.1);color:var(--card-accent);font-size:10px;font-weight:700;line-height:1.2;text-decoration:none;white-space:nowrap;transition:background-color .22s ease,border-color .22s ease,transform .22s ease}
+.occasion-grid .live-demo:hover,.occasion-grid .live-demo:focus-visible{background:rgba(255,248,240,.2);border-color:rgba(255,235,203,.82);transform:translateY(-1px);outline:none}
+.occasion-grid .occasion-card[role=group]:focus-visible{outline:2px solid rgba(255,235,203,.8);outline-offset:3px}
+@media(max-width:420px){.occasion-grid .occasion-actions{gap:5px}.occasion-grid .live-demo{font-size:9px;padding:6px 7px}}
+@media(max-width:680px){.occasion-grid .occasion-card{box-shadow:0 12px 28px rgba(39,17,26,.18),inset 0 1px 0 rgba(255,255,255,.16)}}
+@media(max-width:680px){.occasion-grid .occasion-card{height:auto;min-height:245px}.occasion-grid .occasion-card p{flex:0 0 auto}.occasion-grid .occasion-card .explore{flex:0 0 auto;margin-top:auto}}
+@media(prefers-reduced-motion:reduce){.occasion-grid .occasion-card,.occasion-grid .occasion-card:after,.occasion-grid .occasion-card .book{transition:none}}
+@media(max-width:680px){.occasion-grid .occasion-actions{flex-direction:column;align-items:stretch;gap:8px}.occasion-grid .occasion-card .occasion-actions .explore{width:100%;min-height:22px}.occasion-grid .live-demo{width:100%;min-height:34px;white-space:normal;text-align:center;flex:0 0 auto}}

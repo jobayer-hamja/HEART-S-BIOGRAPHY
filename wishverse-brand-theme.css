@@ -1,0 +1,352 @@
+/* Align every single-experience WishVerse page with the Heart's Biography site palette. */
+.birthday-experience-page{--birthday-wine:#6b263d;--birthday-wine-deep:#4a1a2c;--birthday-ivory:#fffaf1;--birthday-blush:#e8ddbF;--birthday-gold:#c8a66a;min-height:100vh;background-color:#f6ebd8!important;color:#6b263d}
+.birthday-experience-page .wv-header{position:sticky;top:0;z-index:30;background:rgba(246,235,216,.95)!important;border-bottom:1px solid rgba(107,38,61,.13)!important;backdrop-filter:blur(16px) saturate(125%);-webkit-backdrop-filter:blur(16px) saturate(125%)}
+.birthday-experience-main{min-height:calc(100svh - 76px);padding:58px 22px 54px;background:transparent!important}
+.birthday-experience-main:before{background:radial-gradient(ellipse at 50% 42%,rgba(200,166,106,.17),transparent 49%),radial-gradient(ellipse at 8% 90%,rgba(107,38,61,.05),transparent 36%)}
+.birthday-back-link{color:#6b263d}.birthday-back-link:hover{color:#8a6a32}
+.birthday-title-card{background:linear-gradient(145deg,#e1c990,#c8a66a 36%,#f1dfb8 72%,#a78950);box-shadow:0 26px 68px rgba(9,29,77,.2),0 0 56px rgba(200,166,106,.12)}
+.birthday-title-card:hover{box-shadow:0 32px 76px rgba(9,29,77,.24),0 0 60px rgba(200,166,106,.18)}
+.birthday-card-inner{background:linear-gradient(150deg,#173b88,#6b263d 58%,#081f5e);color:#fffaf1}
+.birthday-card-inner:before,.birthday-card-inner:after{border-color:rgba(226,204,156,.22)}
+.birthday-card-label,.birthday-card-kicker{color:#ead8ad}.birthday-card-label span,.birthday-emblem,.birthday-divider{color:#e2cc9c}
+.birthday-emblem svg{filter:none}.birthday-title-card h1{color:#fffaf1;text-shadow:0 3px 18px rgba(3,12,39,.2)}
+.birthday-emblem[hidden]{display:none!important}
+.birthday-title-card h1 em,.birthday-subtitle{color:#f3ead8}.birthday-description{color:rgba(255,250,241,.86)}
+.birthday-highlights li{color:#fffaf1}.birthday-highlights li:before{color:#e2cc9c}
+.birthday-divider span{background:linear-gradient(90deg,transparent,rgba(226,204,156,.75))}
+.single-wish-package{max-width:500px;margin:20px auto 22px;padding:15px 18px;border:1px solid rgba(226,204,156,.33);border-radius:15px;background:rgba(255,250,241,.075);text-align:left}
+.single-wish-package-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#ead8ad;font:700 9px/1.4 "DM Sans",sans-serif;letter-spacing:.13em}
+.single-wish-package-heading strong{flex:none;color:#fffaf1;font-size:16px;letter-spacing:0}
+.single-wish-package>p{margin:9px 0;color:rgba(255,250,241,.84);font:400 11px/1.55 "DM Sans",sans-serif}
+.single-wish-package ul{display:grid;gap:6px;margin:10px 0 0;padding:0;list-style:none}
+.single-wish-package li{position:relative;padding-left:15px;color:#fffaf1;font:400 11px/1.5 "DM Sans",sans-serif}
+.single-wish-package li:before{content:"✓";position:absolute;left:0;color:#e2cc9c}
+.birthday-cta{border-color:#e2cc9c;background:linear-gradient(110deg,#0b245e,#16408a);box-shadow:0 9px 24px rgba(3,14,45,.22),inset 0 1px rgba(255,255,255,.15);color:#fffaf1}
+.birthday-cta:hover,.birthday-cta:focus-visible{border-color:#f4e4c0;background:linear-gradient(110deg,#8a6a32,#c8a66a 56%,#dfc78e);box-shadow:0 13px 30px rgba(3,14,45,.23),0 0 24px rgba(200,166,106,.18);color:#4a1a2c}
+.birthday-card-signoff{color:rgba(242,229,196,.78)}
+.birthday-card-ornament{color:rgba(226,204,156,.65)}.birthday-ornament-right{color:rgba(226,204,156,.55)}
+.birthday-atmosphere i{background:#d7b86e;box-shadow:0 0 9px 2px rgba(200,166,106,.45)}.birthday-glow{background:radial-gradient(circle,rgba(200,166,106,.14),transparent 68%)}
+@media(max-width:760px){.birthday-experience-main{min-height:calc(100svh - 66px);padding:72px 16px 34px}.birthday-card-inner{padding:32px 23px 24px}.birthday-card-label{font-size:9px;letter-spacing:.14em}.birthday-title-card h1{font-size:clamp(41px,11.5vw,62px)}.birthday-description{font-size:12.5px}.birthday-highlights{gap:8px 12px;margin:18px auto 20px}.birthday-highlights li{font-size:11px;padding-left:15px}}
+@media(max-width:420px){.birthday-experience-main{padding-right:12px;padding-left:12px}.birthday-card-inner{padding:29px 17px 21px}.birthday-highlights{grid-template-columns:1fr;max-width:250px;gap:7px}.single-wish-package{padding:13px}.birthday-cta{width:100%;gap:10px;padding:0 15px;font-size:11px}.birthday-card-signoff{font-size:10px}}
+
+/* Birthday page: a narrower card with all experience details in one vertical column. */
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-title-card{width:min(540px,100%)}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-highlights{grid-template-columns:1fr;max-width:360px;gap:8px;margin:20px auto 22px}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .single-wish-package-heading{align-items:flex-start;flex-direction:column;gap:5px}
+@media(max-width:760px){.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-title-card{width:min(500px,100%)}.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner{padding:28px 22px 22px}}
+@media(max-width:420px){.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-title-card{width:100%}.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-highlights{max-width:260px}}
+@media(min-width:761px){
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-experience-main{min-height:calc(100svh - 70px);padding:24px 18px 20px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-title-card{width:min(460px,100%)}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner{padding:20px 32px 16px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-label{margin-bottom:8px;font-size:9px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-emblem{width:40px;height:38px;margin-bottom:4px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-emblem svg{width:38px;height:38px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-kicker{margin-bottom:5px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-title-card h1{font-size:clamp(36px,4vw,48px)}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-subtitle{margin-top:8px;font-size:15px;line-height:1.35}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-divider{margin:9px 0;font-size:12px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-description{font-size:11px;line-height:1.45}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .single-wish-package{margin:9px auto 10px;padding:9px 12px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .single-wish-package>p{margin:5px 0;font-size:10px;line-height:1.35}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .single-wish-package ul{gap:3px;margin-top:6px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .single-wish-package li{font-size:10px;line-height:1.3}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-highlights{max-width:360px;gap:5px;margin:10px auto 12px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-highlights li{font-size:10.5px;line-height:1.3}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-cta{min-height:42px}
+  .birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-signoff{margin-top:8px;font-size:10px}
+}
+
+/* Gift Presentation / The Grand Unwrapping: a single editorial gift-reveal title card. */
+.birthday-experience-page[data-wish-experience="gift-presentation"]{--gift-burgundy:#5A1728;--gift-champagne:#D6B878;--gift-ivory:#F7F1E8;--gift-rose-gold:#B98778;--gift-ink:#34252A;background-color:var(--gift-burgundy)!important;color:var(--gift-ivory)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header{background:rgba(247,241,232,.96)!important;border-bottom-color:rgba(90,23,40,.16)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-experience-main{min-height:calc(100svh - 70px);padding:38px 24px 46px;background:radial-gradient(ellipse at 27% 44%,rgba(185,135,120,.22),transparent 36%),radial-gradient(ellipse at 79% 22%,rgba(214,184,120,.12),transparent 31%),linear-gradient(135deg,#35101d,#5A1728 48%,#35101d)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-experience-main:before{background:radial-gradient(ellipse at 50% 45%,rgba(247,241,232,.06),transparent 62%),linear-gradient(115deg,transparent 22%,rgba(214,184,120,.035),transparent 74%)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header{width:100%!important;max-width:100%;height:auto;min-height:70px;box-sizing:border-box}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header{top:0!important;inset-block-start:0!important;transform:none!important;margin-block-start:0!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"]{padding-top:0!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-presentation-main{width:100%;min-width:0;box-sizing:border-box;overflow:visible!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-back-link{color:#ead8ad}.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-back-link:hover{color:var(--gift-ivory)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-title-card{width:min(1080px,100%);padding:1px;border:1px solid rgba(214,184,120,.76);border-radius:30px;background:linear-gradient(135deg,#E8D295,#A98245 28%,#D6B878 58%,#8F6A38);box-shadow:0 32px 84px rgba(18,5,10,.38),0 0 58px rgba(214,184,120,.12)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{display:grid;grid-template-columns:minmax(300px,.9fr) minmax(0,1.1fr);grid-template-rows:auto auto auto;align-items:center;gap:18px 36px;padding:34px 44px 30px;border-radius:29px;background:radial-gradient(ellipse at 20% 30%,rgba(185,135,120,.16),transparent 46%),linear-gradient(145deg,#6A1D30,#5A1728 52%,#3B101F);color:var(--gift-ivory);text-align:left}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{position:relative;display:grid;place-items:center;grid-column:1;grid-row:1/3;min-height:390px;overflow:hidden;border:1px solid rgba(214,184,120,.22);border-radius:22px;background:radial-gradient(ellipse at 50% 42%,rgba(214,184,120,.18),transparent 46%),linear-gradient(155deg,rgba(255,255,255,.045),rgba(20,5,11,.19));box-shadow:inset 0 1px rgba(255,255,255,.08)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-light-orb{position:absolute;top:13%;left:22%;width:56%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(242,213,151,.2),rgba(214,184,120,.055) 42%,transparent 72%);filter:blur(8px)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{position:relative;z-index:1;width:min(100%,430px);max-height:370px;overflow:visible;filter:drop-shadow(0 15px 16px rgba(13,3,7,.25));animation:gift-box-arrive .85s cubic-bezier(.2,.75,.25,1) both}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-caption{position:absolute;bottom:18px;color:rgba(234,216,173,.72);font:700 8px/1.3 'DM Sans',sans-serif;letter-spacing:.22em}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-copy{grid-column:2;grid-row:1/3;align-self:center;max-width:510px}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-label{margin:0 0 17px;color:var(--gift-champagne);font-size:10px;letter-spacing:.23em}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-kicker{margin:0 0 9px;color:#D9A99B;font-size:9px;letter-spacing:.19em}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-title-card h1{max-width:560px;color:var(--gift-ivory);font-size:clamp(38px,4.1vw,58px);line-height:1.02;letter-spacing:-.035em;text-shadow:0 3px 22px rgba(18,5,10,.22)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-subtitle{max-width:470px;margin:15px 0 0;color:#EAD8AD;font-size:clamp(16px,1.7vw,20px);line-height:1.45}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-divider{justify-content:flex-start;margin:17px 0;color:var(--gift-champagne)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-divider span{background:linear-gradient(90deg,var(--gift-champagne),transparent)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-description{max-width:490px;margin:0;color:rgba(247,241,232,.84);font-size:13px;line-height:1.72}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .single-wish-package{display:none!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights{grid-column:1/-1;grid-row:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:none;gap:12px 24px;margin:1px 0 0;padding:18px 0 0;border-top:1px solid rgba(214,184,120,.27);text-align:left}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights li{padding-left:20px;color:var(--gift-ivory);font-size:11px;line-height:1.5}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights li:before{content:'✦';color:var(--gift-champagne);font-size:10px}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-action{grid-column:1/-1;display:flex;justify-content:center;margin-top:2px}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-cta{min-height:50px;padding:0 28px;border-color:var(--gift-champagne);background:linear-gradient(110deg,#8D263D,#6D1C31 58%,#5A1728);box-shadow:0 12px 30px rgba(16,4,9,.24),inset 0 1px rgba(255,255,255,.14);color:var(--gift-ivory)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-cta:hover,.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-cta:focus-visible{border-color:#E9D49A;background:linear-gradient(110deg,#B98778,#9B5D55 55%,#7F3241);color:#fffaf1}
+@keyframes gift-box-arrive{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:760px){.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-experience-main{min-height:calc(100svh - 66px);padding:54px 14px 28px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{grid-template-columns:1fr;grid-template-rows:auto;gap:15px;padding:22px 19px 23px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{grid-column:1;grid-row:auto;min-height:240px;border-radius:17px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{width:min(90%,310px);max-height:250px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-copy{grid-column:1;grid-row:auto;max-width:none}.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-title-card h1{font-size:clamp(36px,9.4vw,52px)}.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-subtitle{margin-top:10px;font-size:17px}.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-divider{margin:12px 0}.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-description{font-size:12px;line-height:1.6}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights{grid-column:1;grid-row:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px 14px;padding-top:14px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-action{grid-column:1}.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-cta{width:100%;min-height:48px;padding:0 15px;font-size:11px}}
+@media(min-width:761px) and (max-width:1000px){.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header{padding-right:8px;padding-left:8px;gap:6px}.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header .brand-logo{flex:0 1 140px;width:140px;max-width:140px}.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header .brand-logo-image{height:40px;max-width:140px}.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header nav{flex:1 1 auto;min-width:0;gap:5px;margin:0 auto}.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header nav a{font-size:9px;padding-right:0;padding-left:0}.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header .header-cta{flex:none;padding:7px 8px;font-size:8px;white-space:nowrap}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{min-height:320px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{max-height:320px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{gap:16px 25px;padding:28px 30px 25px}}
+@media(max-width:760px){.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header{width:100%!important;max-width:100%!important;margin:0;padding-right:max(12px,env(safe-area-inset-right));padding-left:max(12px,env(safe-area-inset-left));gap:4px}.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header .header-cta{display:none!important}.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header.has-mobile-cart .brand-logo{flex:0 1 auto;width:auto!important;max-width:calc(100vw - 90px)!important}.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header.has-mobile-cart .brand-logo-image{width:auto;max-width:100%;height:40px}}
+@media(max-width:420px){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{min-height:205px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{max-height:218px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights{grid-template-columns:1fr}.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-label{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{animation:none}}
+
+/* Keep the complete gift illustration visible inside its visual panel. */
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:390px;min-height:0;padding:12px 16px 38px;box-sizing:border-box;overflow:visible}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{display:block;width:auto;height:100%;max-width:100%;max-height:100%;aspect-ratio:520/500;object-fit:contain;overflow:visible}
+@media (min-width:761px) and (max-width:1000px){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:320px;padding:10px 14px 34px}}
+@media (max-width:760px){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:240px;min-height:0;padding:10px 12px 35px;overflow:visible}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{width:auto;height:100%;max-width:100%;max-height:100%}}
+@media (max-width:420px){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:205px;padding:8px 10px 32px}}
+
+/* Gift Presentation uses the shared waffle layer over a warm ivory page base. */
+.birthday-experience-page[data-wish-experience="gift-presentation"]{background-color:#f6ebd8!important;background-image:none!important;color:#481f2b}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-presentation-main{background:transparent!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-presentation-main:before{background:none!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-back-link{color:#481f2b}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-back-link:hover{color:#8a3a4b}
+
+/* Match the Birthday Celebration card footprint with a luxury wine surface. */
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-title-card{width:min(460px,100%);padding:1px;border-color:rgba(200,166,106,.8);border-radius:26px;background:linear-gradient(145deg,#e7d5a7,#9b7440 34%,#d6b878 66%,#6b2637);box-shadow:0 24px 58px rgba(40,15,24,.2),0 0 38px rgba(200,166,106,.12)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto auto;gap:10px;padding:20px 30px 18px;border-radius:25px;background-image:linear-gradient(150deg,#682137,#4b1729 58%,#35101e);color:#fffaf1;text-align:center}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{grid-column:1;grid-row:1;height:150px;min-height:0;padding:3px 10px 22px;border:0;border-radius:14px;background:radial-gradient(ellipse at 50% 55%,rgba(214,184,120,.14),transparent 68%);box-shadow:none}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{height:100%;width:auto;max-width:100%;max-height:100%}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-copy{grid-column:1;grid-row:2;max-width:none;text-align:center}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-label{margin-bottom:7px}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-kicker{margin-bottom:5px}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-title-card h1{font-size:clamp(32px,4vw,44px)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-subtitle{margin:8px auto 0;font-size:16px}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-divider{justify-content:center;margin:10px 0}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-description{font-size:11px;line-height:1.5}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights{grid-column:1;grid-row:3;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 12px;margin:0;padding-top:10px;text-align:left}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights li{font-size:10px}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-action{grid-column:1;grid-row:4;margin-top:0}
+@media(max-width:760px){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-title-card{width:min(500px,100%)}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{gap:9px;padding:17px 23px 16px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:130px;padding-bottom:20px}.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-title-card h1{font-size:clamp(31px,8vw,40px)}}
+@media(max-width:420px){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-title-card{width:100%}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{padding:15px 17px 14px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:115px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights{grid-template-columns:1fr;max-width:280px;margin:0 auto}}
+
+/* Match Birthday Celebration's linen card finish and give the gift artwork clear space. */
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{background-color:#4b1729;background-image:url("birthday-linen-texture.svg?v=1"),linear-gradient(150deg,#682137,#4b1729 58%,#35101e);background-size:8px 8px,auto;background-repeat:repeat,no-repeat}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner:before,.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner:after{display:none}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:215px;padding:0 10px 24px;background:radial-gradient(ellipse at 50% 58%,rgba(214,184,120,.2),transparent 70%)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{height:178px;width:auto;max-width:100%;max-height:100%;filter:drop-shadow(0 17px 17px rgba(20,5,11,.36))}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-caption{bottom:7px}
+@media(max-width:760px){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:195px;padding:0 8px 23px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{height:158px}}
+@media(max-width:420px){.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{height:180px;padding-bottom:22px}.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-box-art{height:144px}}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-title-card{border-color:rgba(219,192,132,.94);background:linear-gradient(135deg,#f0dfb6,#aa8750 30%,#d6b878 62%,#735a39);box-shadow:0 26px 62px rgba(29,17,27,.28),0 0 42px rgba(200,166,106,.2)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{background-color:#24151f;background-image:url("birthday-linen-texture.svg?v=1"),linear-gradient(145deg,#34212d,#24151f 56%,#171018);color:#fff8eb;box-shadow:inset 0 1px rgba(255,248,235,.1)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-label,.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-kicker{color:#e5cd98}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-title-card h1{color:#fff8eb;text-shadow:0 3px 20px rgba(0,0,0,.35)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-subtitle{color:#ead9b7}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-description{color:rgba(255,248,235,.86)}
+
+/* Use the same catalogue fiber + soft waffle treatment inside both experience cards. */
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner{background-image:linear-gradient(145deg,rgba(255,250,241,.56),rgba(242,190,205,.35));background-size:auto;background-repeat:no-repeat}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-inner{background-image:linear-gradient(145deg,#34212d,#24151f 56%,#171018);background-size:auto;background-repeat:no-repeat}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner,
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-inner{position:relative;isolation:isolate;overflow:hidden}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner:before,
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-inner:before{content:""!important;display:block!important;position:absolute;inset:0;z-index:0;width:auto;height:auto;top:0;border:0;border-radius:inherit;background-image:var(--hb-catalogue-tile),var(--hb-waffle-soft);background-size:var(--hb-wish-card-fiber),var(--hb-wish-card-weave);background-repeat:repeat,repeat;box-shadow:none;opacity:.68;pointer-events:none}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner:after,
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-inner:after{display:none!important}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner>* ,
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-inner>*{position:relative;z-index:1}
+
+/* Gift Presentation warm ivory linen base; scoped to this page only. */
+.birthday-experience-page[data-wish-experience="gift-presentation"]{background-color:#F7F1E8!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"]>.site-waffle-texture{background-image:var(--hb-waffle-tile);background-size:var(--hb-waffle-size);background-position:0 0;background-repeat:repeat;opacity:1}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-experience-main,
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-presentation-main{background-color:transparent!important;background-image:radial-gradient(ellipse at 50% 38%,rgba(214,184,120,.16),transparent 52%),radial-gradient(ellipse at 13% 88%,rgba(185,135,120,.075),transparent 38%)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-presentation-main:before{background:radial-gradient(ellipse at 50% 46%,rgba(255,255,255,.34),transparent 60%),radial-gradient(ellipse at 84% 16%,rgba(214,184,120,.1),transparent 34%)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-atmosphere i{background:#b98778;box-shadow:0 0 8px 1px rgba(214,184,120,.24);opacity:.34}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-glow{background:radial-gradient(circle,rgba(214,184,120,.13),transparent 68%)}
+
+/* Each single Wish has the same refined glass-card structure with its own soft editorial tint. */
+.birthday-experience-page{--experience-tint:rgba(226,187,167,.48);--experience-accent:#8a5d45}
+.birthday-experience-page[data-wish-experience="gift-presentation"]{--experience-tint:rgba(202,190,225,.55);--experience-accent:#665681}
+.birthday-experience-page[data-wish-experience="marriage-proposal"]{--experience-tint:rgba(224,180,188,.55);--experience-accent:#8d4358}
+.birthday-experience-page[data-wish-experience="love-confession"]{--experience-tint:rgba(202,185,222,.57);--experience-accent:#614a78}
+.birthday-experience-page[data-wish-experience="anniversary-surprise"]{--experience-tint:rgba(225,207,163,.58);--experience-accent:#80652f}
+.birthday-experience-page[data-wish-experience="apology-makeup"]{--experience-tint:rgba(190,211,190,.58);--experience-accent:#49684e}
+.birthday-experience-page[data-wish-experience="signature-wish"]{--experience-tint:rgba(196,202,224,.58);--experience-accent:#505a7d}
+.birthday-experience-page[data-wish-experience="birthday-celebration"]{--experience-tint:rgba(242,190,205,.68);--experience-accent:#a44e68;background-color:#f8e7eb!important}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .wv-header{background:rgba(255,247,248,.96)!important;border-bottom-color:rgba(164,78,104,.2)!important}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-experience-main:before{background:radial-gradient(ellipse at 50% 42%,rgba(242,190,205,.48),transparent 56%),radial-gradient(ellipse at 8% 90%,rgba(200,166,106,.08),transparent 36%)}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-experience-main{background-image:url("birthday-page-symbols.svg?v=1")!important;background-repeat:no-repeat!important;background-position:center!important;background-size:100% 100%!important}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-cta{background:#a44e68;border-color:#c8a66a;color:#fff8f1}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-cta:hover,.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-cta:focus-visible{background:#bd647c;border-color:#c8a66a;color:#fffaf1}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner{background-color:#fbf0f1;background-image:url("birthday-linen-texture.svg?v=1"),linear-gradient(145deg,rgba(255,250,241,.56),rgba(242,190,205,.35));background-size:8px 8px,auto;background-repeat:repeat,no-repeat;box-shadow:inset 0 1px rgba(255,255,255,.9)}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner:before,.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner:after,.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-ornament,.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-atmosphere i{display:none!important}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-title-card{box-shadow:0 15px 34px rgba(53,36,50,.13),inset 0 1px rgba(255,255,255,.8)}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-title-card:hover{box-shadow:0 20px 40px rgba(53,36,50,.17),inset 0 1px rgba(255,255,255,.92)}
+.birthday-experience-main:before{background:radial-gradient(ellipse at 50% 42%,var(--experience-tint),transparent 54%),radial-gradient(ellipse at 8% 90%,rgba(107,38,61,.045),transparent 36%)}
+.birthday-title-card{padding:1px;border-color:color-mix(in srgb,var(--experience-accent) 36%,white);background:linear-gradient(145deg,rgba(255,255,255,.94),var(--experience-tint) 62%,rgba(200,166,106,.4));backdrop-filter:blur(22px) saturate(145%);-webkit-backdrop-filter:blur(22px) saturate(145%);box-shadow:0 16px 36px rgba(107,38,61,.12),inset 0 1px rgba(255,255,255,.92)}
+.birthday-title-card:hover{box-shadow:0 22px 42px rgba(107,38,61,.16),inset 0 1px rgba(255,255,255,.96)}
+.birthday-card-inner{background:linear-gradient(145deg,rgba(255,250,241,.97),color-mix(in srgb,var(--experience-tint) 76%,white));color:#6b263d}
+.birthday-card-inner:before,.birthday-card-inner:after{border-color:color-mix(in srgb,var(--experience-accent) 22%,transparent)}
+.birthday-card-label,.birthday-card-kicker,.birthday-card-label span,.birthday-emblem,.birthday-divider{color:var(--experience-accent)}
+.birthday-title-card h1{color:#6b263d;text-shadow:none}.birthday-title-card h1 em,.birthday-subtitle{color:var(--experience-accent)}
+.birthday-description,.birthday-highlights li{color:#5a3a44}.birthday-highlights li:before{color:var(--experience-accent)}
+.single-wish-package{border-color:color-mix(in srgb,var(--experience-accent) 22%,white);background:linear-gradient(135deg,rgba(255,255,255,.65),color-mix(in srgb,var(--experience-tint) 50%,white));box-shadow:inset 0 1px rgba(255,255,255,.88)}
+.single-wish-package-heading,.single-wish-package-heading strong,.single-wish-package>p,.single-wish-package li{color:#4a1a2c}.single-wish-package-heading{color:var(--experience-accent)}.single-wish-package li:before{color:var(--experience-accent)}
+.birthday-cta{border-color:#6b263d;background:#6b263d;color:#f6ebd8;box-shadow:0 8px 22px rgba(107,38,61,.16),inset 0 1px rgba(255,255,255,.18)}
+.birthday-cta:hover,.birthday-cta:focus-visible{border-color:var(--experience-accent);background:var(--experience-accent);color:#fffaf1;box-shadow:0 12px 25px rgba(107,38,61,.17)}
+.birthday-card-signoff{color:#6c6558}
+.birthday-card-ornament,.birthday-ornament-right{color:color-mix(in srgb,var(--experience-accent) 54%,transparent)}
+.birthday-atmosphere i{background:var(--experience-accent);box-shadow:0 0 8px 2px color-mix(in srgb,var(--experience-accent) 26%,transparent)}
+.birthday-experience-page .birthday-glow{display:none!important}
+.birthday-glow{background:radial-gradient(circle,color-mix(in srgb,var(--experience-tint) 72%,transparent),transparent 68%)}
+
+/* Keep compact circular navbar controls legible in the same navy-and-gold palette. */
+.birthday-experience-page .nav-dropdown-toggle,.birthday-experience-page .mobile-only-category-toggle{color:#6b263d!important;border-color:rgba(107,38,61,.2)!important;background:rgba(246,235,216,.88)!important}
+.birthday-experience-page .mobile-menu-toggle{color:#6b263d!important;border-color:rgba(200,166,106,.6)!important;background:rgba(246,235,216,.92)!important}
+.birthday-experience-page .mobile-menu-toggle span{background:currentColor!important}
+.birthday-experience-page .site-search-trigger{color:#6b263d!important;border-color:rgba(107,38,61,.22)!important;background:rgba(246,235,216,.92)!important}
+.birthday-experience-page .site-cart-control-tray{border-color:rgba(107,38,61,.2);background:rgba(246,235,216,.86)}
+.birthday-experience-page .site-cart-count{background:#6b263d;color:#fff8f0}
+@media(max-width:760px){.birthday-experience-main{padding:72px 16px 34px}}
+
+
+/* Gift Presentation title card: smooth wine surface, no texture layers. */
+.birthday-experience-page[data-wish-experience="gift-presentation"] :is(.gift-card-inner,.birthday-card-inner){background-image:linear-gradient(145deg,#34212d,#24151f 56%,#171018)!important;background-size:auto!important;background-repeat:no-repeat!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-inner:before,.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner:before{content:none!important;display:none!important;background-image:none!important}
+
+/* "Back to The WishVerse" sits in the same tray as the Date Invitation back button on every Wish page. */
+.birthday-experience-page.birthday-experience-page .birthday-back-link{display:inline-flex!important;align-items:center;gap:7px;padding:8px 12px!important;border:1px solid rgba(107,38,61,.22)!important;border-radius:999px!important;background:rgba(255,255,255,.4)!important;box-shadow:none!important;color:#6b263d!important;font:700 10px/1.2 "DM Sans",Arial,sans-serif!important;letter-spacing:0!important;text-decoration:none;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:background .2s ease,border-color .2s ease}
+.birthday-experience-page.birthday-experience-page .birthday-back-link:hover,.birthday-experience-page.birthday-experience-page .birthday-back-link:focus-visible{background:rgba(255,255,255,.7)!important;border-color:rgba(107,38,61,.38)!important;color:#6b263d!important;outline:none}
+
+/* Shared glass-tray treatment for every WishVerse single-card feature */
+.birthday-experience-page .birthday-highlights li{position:relative;min-height:44px;display:flex;align-items:center;padding:10px 13px 10px 32px;border:1px solid rgba(255,255,255,.68);border-radius:12px;background:linear-gradient(145deg,rgba(255,255,255,.62),rgba(255,255,255,.28));box-shadow:inset 0 1px rgba(255,255,255,.65),0 5px 15px rgba(38,36,40,.06);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.birthday-experience-page .birthday-highlights li:before{left:12px;top:12px}
+.birthday-experience-page .single-wish-package{margin-top:20px}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights li{background:linear-gradient(145deg,rgba(255,255,255,.62),rgba(255,255,255,.28));backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+
+/* Glass pricing tray at the foot of the custom WishVerse cards */
+.birthday-experience-page .experience-price-tray{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px;width:min(500px,100%);margin:18px auto 12px;padding:11px 15px;border:1px solid rgba(255,255,255,.38);border-radius:13px;background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,.08));box-shadow:inset 0 1px rgba(255,255,255,.24),0 6px 16px rgba(14,9,20,.09);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#fff7e5;text-align:left}
+.birthday-experience-page .experience-price-tray span{font:700 9px/1.4 "DM Sans",Arial,sans-serif;letter-spacing:.13em}
+.birthday-experience-page .experience-price-tray strong{flex:none;color:#fffaf1;font:600 17px/1.2 "Playfair Display",Georgia,serif;letter-spacing:0}
+@media(max-width:760px){.birthday-experience-page .experience-price-tray{margin:14px auto 10px}}
+
+/* Stack every single-card feature in one vertical column */
+.birthday-experience-page[data-wish-experience] .birthday-highlights{grid-template-columns:1fr!important}
+
+/* Birthday Celebration: warm apricot and champagne, clearly apart from Love Confession */
+.birthday-experience-page[data-wish-experience="birthday-celebration"]{--experience-tint:rgba(241,190,120,.62);--experience-accent:#95601f;background-color:#fbf1df!important}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .wv-header{background:rgba(255,249,238,.97)!important;border-bottom-color:rgba(149,96,31,.2)!important}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-experience-main:before{background:radial-gradient(ellipse at 50% 42%,rgba(241,190,120,.48),transparent 56%),radial-gradient(ellipse at 8% 90%,rgba(204,151,75,.1),transparent 36%)}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-card-inner{background-color:#fff8e9;background-image:url("birthday-linen-texture.svg?v=1"),linear-gradient(145deg,rgba(255,252,243,.7),rgba(241,190,120,.3));background-size:8px 8px,auto;background-repeat:repeat,no-repeat}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-title-card h1{color:#593918}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-subtitle{color:#95601f}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-description,.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-highlights li{color:#594634}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-cta{background:#95601f;border-color:#c99b5a;color:#fffaf1}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-cta:hover,.birthday-experience-page[data-wish-experience="birthday-celebration"] .birthday-cta:focus-visible{background:#b67528;border-color:#c99b5a;color:#fffaf1}
+.birthday-experience-page[data-wish-experience="birthday-celebration"] .single-wish-package-heading,.birthday-experience-page[data-wish-experience="birthday-celebration"] .single-wish-package-heading strong{color:#68441e}
+
+/* Gift Presentation: deep violet velvet with lavender and champagne details */
+.birthday-experience-page[data-wish-experience="gift-presentation"]{--gift-burgundy:#29263f;--gift-champagne:#e0ca96;--gift-ivory:#faf6ef;--gift-rose-gold:#b8acd7;--gift-ink:#302b49;background-color:#29263f!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-experience-main{background:radial-gradient(ellipse at 25% 44%,rgba(184,172,215,.2),transparent 38%),radial-gradient(ellipse at 79% 20%,rgba(224,202,150,.15),transparent 31%),linear-gradient(135deg,#211f36,#37324f 50%,#211f36)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .wv-header{background:rgba(249,246,241,.97)!important;border-bottom-color:rgba(70,62,101,.2)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-title-card{background:linear-gradient(135deg,#e0ca96,#a99bc9 28%,#e0ca96 58%,#8275a6);box-shadow:0 30px 76px rgba(18,16,36,.4),0 0 58px rgba(184,172,215,.16)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{background-image:radial-gradient(ellipse at 20% 30%,rgba(184,172,215,.16),transparent 46%),linear-gradient(145deg,#45405f,#332f4b 52%,#242239)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{border-color:rgba(224,202,150,.3);background:radial-gradient(ellipse at 50% 42%,rgba(224,202,150,.16),transparent 46%),linear-gradient(155deg,rgba(184,172,215,.08),rgba(20,18,38,.22))}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-caption{color:rgba(242,229,199,.82)}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-kicker{color:#d0b5ce}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-subtitle{color:#eee3c7}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .experience-price-tray{border-color:rgba(224,202,150,.35);background:linear-gradient(145deg,rgba(224,202,150,.13),rgba(184,172,215,.1))}
+
+/* The Grand Unwrapping: cream base for the single product card. */
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-title-card{
+  border-color:rgba(185,148,88,.78)!important;
+  background:linear-gradient(135deg,#f4e6c4,#c9aa73 34%,#efe0bd 68%,#b18b50)!important;
+  box-shadow:0 24px 58px rgba(40,15,24,.16),0 0 34px rgba(200,166,106,.1)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{
+  background-color:#f7efdf!important;
+  background-image:linear-gradient(145deg,#fffaf1,#f1e4cf)!important;
+  color:#382b2b!important;
+  box-shadow:inset 0 1px rgba(255,255,255,.9)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{
+  border-color:rgba(177,143,87,.25)!important;
+  background:radial-gradient(ellipse at 50% 56%,rgba(214,184,120,.2),transparent 68%),linear-gradient(145deg,rgba(255,255,255,.66),rgba(239,225,201,.55))!important;
+  box-shadow:inset 0 1px rgba(255,255,255,.8)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-caption{color:#765940!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-label,
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-card-kicker{color:#8a6540!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-title-card h1{color:#572138!important;text-shadow:0 2px 12px rgba(87,33,56,.08)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-subtitle{color:#765940!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-divider{color:#b69a6a!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-description{color:#59413c!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights{border-top-color:rgba(107,38,61,.16)!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights li{color:#59413c!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights li:before{color:#a7834c!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .experience-price-tray{
+  border-color:rgba(151,116,72,.3)!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.82),rgba(241,228,207,.75))!important;
+  color:#59413c!important;
+  box-shadow:inset 0 1px rgba(255,255,255,.9),0 6px 16px rgba(72,50,35,.08)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .experience-price-tray strong{color:#572138!important}
+/* Replace the cool gray textile cast on The Grand Unwrapping with warm cream. */
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{
+  background-color:#f7efdf!important;
+  background-image:none!important;
+  background-repeat:no-repeat!important;
+  color:#382b2b!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner:before,
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner:after{display:none!important;background-image:none!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{
+  background:linear-gradient(145deg,#fff9ee,#eee0c7)!important;
+  border-color:rgba(177,143,87,.28)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .experience-price-tray{
+  background:#fff9ef!important;
+  border-color:rgba(151,116,72,.34)!important;
+}
+
+/* Replace remaining wine-purple card surfaces with a warm ivory/champagne palette. */
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-presentation-main{
+  background:#f6ebd8!important;
+  background-image:none!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-presentation-main:before{background:none!important}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-title-card{
+  border-color:#c7a66c!important;
+  background:linear-gradient(135deg,#f2dfb2,#c7a66c 34%,#ead6a5 68%,#b78f50)!important;
+  box-shadow:0 24px 58px rgba(72,50,35,.16),0 0 34px rgba(200,166,106,.13)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-card-inner{
+  background-color:#f7efdf!important;
+  background-image:linear-gradient(145deg,#fffaf1,#f1e4cf)!important;
+  color:#382b2b!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-visual-panel{
+  background:linear-gradient(145deg,#fff9ee,#eee0c7)!important;
+  border-color:rgba(177,143,87,.28)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .gift-highlights li{
+  color:#59413c!important;
+  background:rgba(255,255,255,.56)!important;
+  border-color:rgba(151,116,72,.22)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .experience-price-tray{
+  background:#fff9ef!important;
+  border-color:rgba(151,116,72,.34)!important;
+  color:#59413c!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-cta{
+  border-color:#b18a4e!important;
+  background:linear-gradient(135deg,#d9bd80,#b89053)!important;
+  color:#382b2b!important;
+  box-shadow:0 8px 20px rgba(112,78,39,.17),inset 0 1px rgba(255,250,232,.56)!important;
+}
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-cta:hover,
+.birthday-experience-page[data-wish-experience="gift-presentation"] .birthday-cta:focus-visible{
+  border-color:#98713d!important;
+  background:linear-gradient(135deg,#e3cc9b,#c4a165)!important;
+  color:#30251a!important;
+}

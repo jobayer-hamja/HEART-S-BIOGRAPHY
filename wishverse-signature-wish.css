@@ -1,0 +1,364 @@
+
+/* The Signature Wish — flagship category card and exclusive experience page */
+.wish-category-grid .signature-wish{
+  --signature-gold:#d8bd7b;
+  position:relative;
+  min-height:0;
+  padding:0;
+  overflow:visible;
+  border:1px solid rgba(216,189,123,.82);
+  border-radius:21px;
+  background:linear-gradient(145deg,#c9ad70,#795334 48%,#d8bd7b);
+  box-shadow:0 18px 38px rgba(22,10,15,.23),0 0 28px rgba(198,159,82,.1);
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+.wish-category-grid .signature-wish:before{
+  inset:1px;
+  border-radius:20px;
+  background:radial-gradient(ellipse at 50% 0,rgba(223,194,128,.22),transparent 52%),linear-gradient(145deg,rgba(104,35,48,.28),rgba(7,7,10,.15));
+  opacity:1;
+}
+.wish-category-grid .signature-wish:after{
+  right:8%;
+  top:0;
+  width:70%;
+  height:60%;
+  background:radial-gradient(ellipse,rgba(226,194,122,.16),transparent 70%);
+  pointer-events:none;
+}
+.wish-category-grid .signature-wish .wish-category-card{
+  display:flex;
+  min-height:376px;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:23px 22px 19px;
+  overflow:hidden;
+  border:1px solid rgba(232,210,157,.35);
+  border-radius:20px;
+  background:radial-gradient(ellipse at 92% 0,rgba(160,91,68,.17),transparent 38%),linear-gradient(150deg,#120e11 0%,#281219 55%,#100d10 100%);
+  box-shadow:inset 0 1px rgba(255,244,216,.12),inset 0 0 36px rgba(127,56,50,.12);
+  color:#f5efe3;
+  text-align:left;
+}
+.wish-category-grid .signature-wish .wish-selected-badge{z-index:4}
+.signature-collection-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  margin:1px 0 18px;
+  padding:6px 9px;
+  border:1px solid rgba(216,189,123,.42);
+  border-radius:999px;
+  background:rgba(216,189,123,.075);
+  color:#f0dda8!important;
+  font:700 8px/1.2 "DM Sans",Arial,sans-serif;
+  letter-spacing:.16em;
+}
+.signature-collection-badge span{font-size:9px;color:#dfc37f}
+.wish-category-grid .signature-wish .category-number{
+  order:0;
+  color:#e6cf95!important;
+  font:700 9px/1 "DM Sans",Arial,sans-serif;
+  letter-spacing:.2em;
+}
+.signature-heading{margin:22px 0 0}
+.signature-exclusive{
+  color:#d9c48f;
+  font:700 8px/1.4 "DM Sans",Arial,sans-serif;
+  letter-spacing:.22em;
+}
+.wish-category-grid .signature-wish .signature-heading h3{
+  margin:8px 0 0;
+  color:#f3e8cf!important;
+  font:500 clamp(25px,2.2vw,31px)/1.05 "Playfair Display",Georgia,serif;
+  letter-spacing:.025em;
+  text-shadow:0 2px 16px rgba(235,204,139,.1);
+}
+.wish-category-grid .signature-category{
+  margin:15px 0 0;
+  color:#ded4c2!important;
+  font:600 8px/1.5 "DM Sans",Arial,sans-serif;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.wish-category-grid .signature-tagline{
+  margin:9px 0 0;
+  color:#f0dda8!important;
+  font:500 14px/1.4 "Playfair Display",Georgia,serif;
+}
+.wish-category-grid .signature-quote{
+  margin:12px 0 8px;
+  padding:0;
+  color:#eee6d7!important;
+  font:italic 11px/1.5 "Playfair Display",Georgia,serif;
+}
+.wish-category-grid .signature-price{
+  margin-top:auto;
+  padding-top:6px;
+  color:#f0dda8!important;
+  font:700 10px/1.45 "DM Sans",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;
+}
+.wish-category-grid .signature-wish .category-explore{
+  width:100%;
+  margin-top:13px;
+  padding-top:11px;
+  border-top:1px solid rgba(216,189,123,.34);
+  color:#e6cf95;
+  font:700 9px/1.2 "DM Sans",Arial,sans-serif;
+  letter-spacing:.17em;
+}
+.wish-category-grid .signature-wish .category-explore b{color:#e6cf95}
+.wish-category-grid .signature-wish:hover,
+.wish-category-grid .signature-wish:focus-visible{
+  transform:translateY(-6px);
+  border-color:#f0d897;
+  box-shadow:0 25px 48px rgba(17,8,12,.3),0 0 34px rgba(215,179,100,.2);
+  outline:none;
+}
+.wish-category-grid .signature-wish:hover .wish-category-card,
+.wish-category-grid .signature-wish:focus-visible .wish-category-card{
+  border-color:rgba(239,215,159,.7);
+}
+.wish-category-grid .signature-wish[aria-pressed="true"] .wish-category-card{
+  background:radial-gradient(ellipse at 92% 0,rgba(160,91,68,.17),transparent 38%),linear-gradient(150deg,#120e11 0%,#281219 55%,#100d10 100%);
+  color:#f5efe3;
+}
+@media(max-width:980px){
+  .wish-category-grid .signature-wish .wish-category-card{min-height:356px}
+}
+@media(max-width:480px){
+  .wish-category-grid .signature-wish .wish-category-card{min-height:345px;padding:20px 19px 17px}
+  .signature-collection-badge{margin-bottom:14px}
+  .signature-heading{margin-top:19px}
+}
+@media(prefers-reduced-motion:reduce){
+  .wish-category-grid .signature-wish{transition:none}
+}
+
+/* Editorial signature page */
+.birthday-experience-page[data-wish-experience="signature-wish"]{
+  --signature-gold:#ddc37f;
+  --signature-ivory:#f7f0e4;
+  background-color:#09080a!important;
+  color:var(--signature-ivory);
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .site-waffle-texture{opacity:.035}
+.birthday-experience-page[data-wish-experience="signature-wish"] .wv-header{
+  background:rgba(12,9,11,.94)!important;
+  border-bottom:1px solid rgba(221,195,127,.2)!important;
+  color:var(--signature-ivory);
+  -webkit-backdrop-filter:blur(16px);
+  backdrop-filter:blur(16px);
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .wv-header nav a,
+.birthday-experience-page[data-wish-experience="signature-wish"] .wv-header .header-cta{color:var(--signature-ivory)}
+.birthday-experience-page[data-wish-experience="signature-wish"] .birthday-experience-main{
+  position:relative;
+  min-height:calc(100svh - 70px);
+  padding:clamp(36px,7vh,68px) 18px 42px;
+  overflow:hidden;
+  background:radial-gradient(ellipse at 50% 28%,rgba(137,61,56,.26),transparent 39%),radial-gradient(ellipse at 50% 70%,rgba(215,179,100,.08),transparent 48%),linear-gradient(145deg,#09080a,#170d11 60%,#09080a)!important;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .birthday-experience-main:before{
+  background:radial-gradient(ellipse at 50% 32%,rgba(221,195,127,.11),transparent 56%);
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .birthday-back-link{
+  border-color:rgba(221,195,127,.36);
+  background:rgba(22,16,18,.74);
+  color:#e7d8b3;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-title-card{
+  width:min(640px,100%);
+  min-height:0;
+  padding:1px;
+  border:1px solid rgba(221,195,127,.8);
+  border-radius:26px;
+  background:linear-gradient(135deg,#eddaa3,#967749 36%,#dfc685 68%,#65472c);
+  box-shadow:0 28px 70px rgba(0,0,0,.48),0 0 52px rgba(215,179,100,.1);
+  animation:signature-card-enter .65s cubic-bezier(.2,.75,.25,1) both;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-card-inner{
+  position:relative;
+  padding:clamp(30px,5vw,46px) clamp(22px,6vw,52px) 29px;
+  overflow:hidden;
+  border-radius:25px;
+  background:radial-gradient(ellipse at 92% 0,rgba(161,83,67,.22),transparent 38%),radial-gradient(ellipse at 50% 100%,rgba(136,82,47,.13),transparent 48%),linear-gradient(155deg,#120e11,#241117 55%,#0d0b0d);
+  color:var(--signature-ivory);
+  text-align:center;
+  box-shadow:inset 0 1px rgba(255,247,225,.11);
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-card-inner:before,
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-card-inner:after,
+.birthday-experience-page[data-wish-experience="signature-wish"] .birthday-card-ornament{display:none!important}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-exclusive-label{
+  margin:0 0 13px;
+  color:#e6d4a8;
+  font:700 9px/1.4 "DM Sans",Arial,sans-serif;
+  letter-spacing:.25em;
+}
+.signature-seal{
+  display:grid;
+  width:44px;
+  height:44px;
+  margin:0 auto 12px;
+  place-items:center;
+  border:1px solid rgba(221,195,127,.65);
+  border-radius:50%;
+  color:#e4c77f;
+  box-shadow:0 0 0 5px rgba(221,195,127,.045),0 0 20px rgba(221,195,127,.08);
+}
+.signature-seal span{font:500 22px/1 "Playfair Display",Georgia,serif}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-page-badge{
+  display:inline-flex;
+  margin:0 0 18px;
+  padding:7px 11px;
+  border:1px solid rgba(221,195,127,.42);
+  border-radius:999px;
+  background:rgba(221,195,127,.06);
+  color:#e4d2a5;
+  font:700 8px/1.2 "DM Sans",Arial,sans-serif;
+  letter-spacing:.17em;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .birthday-card-kicker{
+  margin:0 0 10px;
+  color:#d5b96f;
+  font:700 8px/1.4 "DM Sans",Arial,sans-serif;
+  letter-spacing:.2em;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-title-card h1{
+  margin:0;
+  color:#f1dfb2;
+  font:500 clamp(35px,7vw,52px)/1.02 "Playfair Display",Georgia,serif;
+  letter-spacing:.015em;
+  text-shadow:0 3px 22px rgba(221,195,127,.14);
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .birthday-subtitle{
+  margin:14px 0 0;
+  color:#e1d0a5;
+  font:500 clamp(16px,2.4vw,20px)/1.35 "Playfair Display",Georgia,serif;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-divider{
+  margin:19px 0 15px;
+  color:#d7ba72;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-divider span{
+  background:linear-gradient(90deg,transparent,rgba(221,195,127,.65),transparent);
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-description{
+  max-width:470px;
+  margin:0 auto;
+  color:rgba(247,240,228,.82);
+  font:italic 17px/1.5 "Playfair Display",Georgia,serif;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-page-category{
+  margin:13px 0 0;
+  color:#b9a77c;
+  font:700 8px/1.4 "DM Sans",Arial,sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-price-block{
+  max-width:100%;
+  margin:22px 0 18px;
+  padding:13px 16px;
+  border:1px solid rgba(221,195,127,.42);
+  border-radius:13px;
+  background:linear-gradient(145deg,rgba(221,195,127,.1),rgba(126,44,48,.1));
+  box-shadow:inset 0 1px rgba(255,245,215,.08),0 9px 24px rgba(0,0,0,.18);
+  text-align:left;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-price-block .single-wish-package-heading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  color:#d7c28f;
+  font:700 8px/1.4 "DM Sans",Arial,sans-serif;
+  letter-spacing:.15em;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-price-block .single-wish-package-heading strong{
+  color:#f0d892;
+  font:500 24px/1.1 "Playfair Display",Georgia,serif;
+  letter-spacing:0;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-cta{
+  width:100%;
+  min-height:49px;
+  justify-content:center;
+  border:1px solid #e3ca86;
+  background:linear-gradient(135deg,#e4ce90,#c7a95e);
+  color:#241819;
+  box-shadow:0 10px 24px rgba(165,121,52,.2),inset 0 1px rgba(255,252,237,.5);
+  font-size:10px;
+  letter-spacing:.12em;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-cta:hover,
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-cta:focus-visible{
+  border-color:#f2dda3;
+  background:linear-gradient(135deg,#f0dda8,#d7bc74);
+  color:#211619;
+  box-shadow:0 13px 28px rgba(184,141,73,.27);
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-signoff{
+  margin:18px 0 0;
+  color:rgba(231,216,180,.62);
+  font:italic 12px/1.4 "Playfair Display",Georgia,serif;
+}
+@keyframes signature-card-enter{
+  from{opacity:0;transform:translateY(9px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@media(max-width:600px){
+  .birthday-experience-page[data-wish-experience="signature-wish"] .birthday-experience-main{padding:48px 14px 30px}
+  .birthday-experience-page[data-wish-experience="signature-wish"] .signature-title-card{width:100%;border-radius:22px}
+  .birthday-experience-page[data-wish-experience="signature-wish"] .signature-card-inner{padding:31px 20px 23px;border-radius:21px}
+  .birthday-experience-page[data-wish-experience="signature-wish"] .signature-title-card h1{font-size:clamp(34px,10vw,46px)}
+  .birthday-experience-page[data-wish-experience="signature-wish"] .signature-description{font-size:15px}
+  .birthday-experience-page[data-wish-experience="signature-wish"] .signature-price-block{margin:18px 0 15px}
+  .birthday-experience-page[data-wish-experience="signature-wish"] .signature-cta{min-height:48px}
+}
+@media(prefers-reduced-motion:reduce){
+  .birthday-experience-page[data-wish-experience="signature-wish"] .signature-title-card{animation:none}
+}
+.wish-category-grid .signature-wish[aria-pressed="true"] .wish-category-card,
+.wish-category-grid .signature-wish .wish-category-card{
+  background:radial-gradient(ellipse at 92% 0,rgba(160,91,68,.17),transparent 38%),linear-gradient(150deg,#120e11 0%,#281219 55%,#100d10 100%)!important;
+  color:#f5efe3!important;
+}
+.wish-category-grid .signature-wish .wish-category-card .category-number{color:#e6cf95!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-collection-badge,
+.wish-category-grid .signature-wish .wish-category-card .signature-exclusive{color:#f0dda8!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-heading h3{color:#fff3d9!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-category{color:#ded4c2!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-tagline{color:#f0dda8!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-quote{color:#eee6d7!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-price{
+  color:#f0dda8!important;
+  font:700 9px/1.5 "DM Sans",Arial,sans-serif!important;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.wish-category-grid .signature-wish .wish-category-card .signature-heading h3,
+.wish-category-grid .signature-wish[aria-pressed="true"] .wish-category-card .signature-heading h3{color:#fff3d9!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-category,
+.wish-category-grid .signature-wish[aria-pressed="true"] .wish-category-card .signature-category{color:#e6ddcf!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-tagline,
+.wish-category-grid .signature-wish[aria-pressed="true"] .wish-category-card .signature-tagline{color:#f0dda8!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-quote,
+.wish-category-grid .signature-wish[aria-pressed="true"] .wish-category-card .signature-quote{color:#f1ece2!important}
+.wish-category-grid .signature-wish .wish-category-card .signature-exclusive,
+.wish-category-grid .signature-wish[aria-pressed="true"] .wish-category-card .signature-exclusive,
+.wish-category-grid .signature-wish .wish-category-card .signature-collection-badge,
+.wish-category-grid .signature-wish[aria-pressed="true"] .wish-category-card .signature-collection-badge{color:#f3dfa7!important}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-price-block .single-wish-package-heading{
+  flex-direction:column;
+  align-items:flex-start;
+  gap:7px;
+}
+.birthday-experience-page[data-wish-experience="signature-wish"] .signature-price-block .single-wish-package-heading strong{
+  max-width:100%;
+  color:#f3dfa7!important;
+  font:600 16px/1.35 "DM Sans",Arial,sans-serif!important;
+  letter-spacing:.01em;
+}

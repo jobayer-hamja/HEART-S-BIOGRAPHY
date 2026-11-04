@@ -1,0 +1,5 @@
+/* Shared responsive Heart’s Biography navbar logo sizing. */
+.topbar .brand-logo,.wv-header .brand-logo{display:flex;align-items:center;flex:none;max-width:335px;line-height:0;text-decoration:none}
+.brand-logo-image{display:block;width:auto;height:52px;max-width:min(335px,34vw);object-fit:contain}
+@media(max-width:760px){.topbar .brand-logo,.wv-header .brand-logo{max-width:min(260px,68vw)}.brand-logo-image{height:44px;max-width:min(260px,68vw)}}
+@media(max-width:379px){.topbar .brand-logo,.wv-header .brand-logo{width:auto;max-width:min(220px,70vw)}.brand-logo-image{width:auto;height:32px;max-width:min(220px,70vw)}}

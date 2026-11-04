@@ -1,0 +1,140 @@
+/* WishVerse experience themes — Love Confession, Anniversary Surprise, Apology & Make Up.
+   Same title-card structure and linen texture as Birthday Celebration, each with its own palette.
+   Date Invitation, Birthday, Gift Presentation and Marriage Proposal are NOT touched by this file. */
+.birthday-experience-page[data-wish-experience="love-confession"]{--t-bg:#ece5f5;--t-header:rgba(247,243,252,.96);--t-header-line:rgba(107,74,138,.22);--t-tint:rgba(204,185,230,.7);--t-accent:#6b4a8a;--t-glow:rgba(204,186,230,.55);--t-cta:#6b4a8a;--t-cta-hover:#8260a6;--t-cta-border:#c3b0dc;--t-inner-bg:#f4effa;--t-inner-grad:rgba(204,185,230,.4);--t-shadow:rgba(60,36,86,.14);--t-shadow-hover:rgba(60,36,86,.19)}
+.birthday-experience-page[data-wish-experience="anniversary-surprise"]{--t-bg:#f6eedb;--t-header:rgba(252,247,234,.96);--t-header-line:rgba(128,101,47,.22);--t-tint:rgba(228,206,150,.66);--t-accent:#80652f;--t-glow:rgba(232,208,150,.5);--t-cta:#8a6a2c;--t-cta-hover:#a37f38;--t-cta-border:#c8a66a;--t-inner-bg:#fbf4e2;--t-inner-grad:rgba(226,201,140,.38);--t-shadow:rgba(70,52,20,.13);--t-shadow-hover:rgba(70,52,20,.18)}
+.birthday-experience-page[data-wish-experience="apology-makeup"]{--t-bg:#e6eee4;--t-header:rgba(245,250,243,.96);--t-header-line:rgba(73,104,78,.22);--t-tint:rgba(176,205,180,.66);--t-accent:#49684e;--t-glow:rgba(176,208,182,.5);--t-cta:#4d7153;--t-cta-hover:#5f8a66;--t-cta-border:#a9c3a0;--t-inner-bg:#f2f7f0;--t-inner-grad:rgba(176,205,180,.38);--t-shadow:rgba(30,54,36,.13);--t-shadow-hover:rgba(30,54,36,.18)}
+.birthday-experience-page[data-wish-experience="signature-wish"]{--t-bg:#f8eadf;--t-header:rgba(253,246,240,.96);--t-header-line:rgba(160,90,69,.22);--t-tint:rgba(255,198,168,.62);--t-accent:#9a523f;--t-glow:rgba(255,198,168,.5);--t-cta:#9a523f;--t-cta-hover:#b2674f;--t-cta-border:#e0b59a;--t-inner-bg:#fcf1e8;--t-inner-grad:rgba(255,198,168,.38);--t-shadow:rgba(90,48,36,.13);--t-shadow-hover:rgba(90,48,36,.18)}
+
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card{width:min(540px,100%)}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-highlights{grid-template-columns:1fr;max-width:360px;gap:8px;margin:20px auto 22px}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .single-wish-package-heading{align-items:flex-start;flex-direction:column;gap:5px}
+@media(max-width:760px){.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card{width:min(500px,100%)}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner{padding:28px 22px 22px}}
+@media(max-width:420px){.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card{width:100%}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-highlights{max-width:260px}}
+@media(min-width:761px){.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-experience-main{min-height:calc(100svh - 70px);padding:24px 18px 20px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card{width:min(460px,100%)}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner{padding:20px 32px 16px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-label{margin-bottom:8px;font-size:9px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-emblem{width:40px;height:38px;margin-bottom:4px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-emblem svg{width:38px;height:38px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-kicker{margin-bottom:5px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card h1{font-size:clamp(36px,4vw,48px)}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-subtitle{margin-top:8px;font-size:15px;line-height:1.35}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-divider{margin:9px 0;font-size:12px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-description{font-size:11px;line-height:1.45}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .single-wish-package{margin:9px auto 10px;padding:9px 12px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .single-wish-package>p{margin:5px 0;font-size:10px;line-height:1.35}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .single-wish-package ul{gap:3px;margin-top:6px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .single-wish-package li{font-size:10px;line-height:1.3}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-highlights{max-width:360px;gap:5px;margin:10px auto 12px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-highlights li{font-size:10.5px;line-height:1.3}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-cta{min-height:42px}.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-signoff{margin-top:8px;font-size:10px}}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner{background-image:linear-gradient(145deg,rgba(255,250,241,.56),var(--t-inner-grad));background-size:auto;background-repeat:no-repeat}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner{position:relative;isolation:isolate;overflow:hidden}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner:before{content:""!important;display:block!important;position:absolute;inset:0;z-index:0;width:auto;height:auto;top:0;border:0;border-radius:inherit;background-image:var(--hb-catalogue-tile),var(--hb-waffle-soft);background-size:var(--hb-wish-card-fiber),var(--hb-wish-card-weave);background-repeat:repeat,repeat;box-shadow:none;opacity:.68;pointer-events:none}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner:after{display:none!important}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner>*{position:relative;z-index:1}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]){--experience-tint:var(--t-tint);--experience-accent:var(--t-accent);background-color:var(--t-bg)!important}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .wv-header{background:var(--t-header)!important;border-bottom-color:var(--t-header-line)!important}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-experience-main:before{background:radial-gradient(ellipse at 50% 42%,var(--t-glow),transparent 56%),radial-gradient(ellipse at 8% 90%,rgba(200,166,106,.08),transparent 36%)}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-experience-main{background-image:none!important;background-repeat:no-repeat!important;background-position:center!important;background-size:100% 100%!important}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-cta{background:var(--t-cta);border-color:var(--t-cta-border);color:#fff8f1}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-cta:hover,.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-cta:focus-visible{background:var(--t-cta-hover);border-color:var(--t-cta-border);color:#fffaf1}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner{background-color:var(--t-inner-bg);background-image:url("birthday-linen-texture.svg?v=1"),linear-gradient(145deg,rgba(255,250,241,.56),var(--t-inner-grad));background-size:8px 8px,auto;background-repeat:repeat,no-repeat;box-shadow:inset 0 1px rgba(255,255,255,.9)}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner:before,.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner:after,.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-ornament,.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-atmosphere i{display:none!important}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card{box-shadow:0 15px 34px var(--t-shadow),inset 0 1px rgba(255,255,255,.8)}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card:hover{box-shadow:0 20px 40px var(--t-shadow-hover),inset 0 1px rgba(255,255,255,.92)}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-highlights[hidden]{display:none!important}
+
+/* ---- Same card size on all four pages (matches the Birthday Celebration card) ---- */
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card{display:flex;min-height:619px}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner{flex:1;display:grid;align-content:center;justify-items:center}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner>*{justify-self:center}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-card-inner>:is(.birthday-subtitle,.birthday-divider,.birthday-description,.single-wish-package,.birthday-highlights){width:100%}
+@media(min-width:761px) and (max-width:1000px){.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card{min-height:607px}}
+@media(max-width:760px){.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-title-card{min-height:868px}}
+
+/* ---- Background blobs follow each page's theme (no leftover pink) ---- */
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"])::before{background:linear-gradient(135deg,var(--t-tint),var(--t-glow))!important}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"])::after{background:linear-gradient(135deg,var(--t-glow),var(--t-tint))!important}
+
+/* ---- Back button in a tray, like the Date Invitation flow ---- */
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-back-link{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid color-mix(in srgb,var(--t-accent) 30%,transparent);border-radius:999px;background:rgba(255,255,255,.55);box-shadow:0 2px 8px rgba(40,30,50,.06);color:var(--t-accent);font:700 10px/1.2 "DM Sans",Arial,sans-serif;letter-spacing:.01em;text-decoration:none;transition:background .2s ease,box-shadow .2s ease}
+.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-back-link:hover,.birthday-experience-page:is([data-wish-experience="love-confession"],[data-wish-experience="anniversary-surprise"],[data-wish-experience="apology-makeup"],[data-wish-experience="signature-wish"]) .birthday-back-link:focus-visible{background:rgba(255,255,255,.85);color:var(--t-accent);box-shadow:0 4px 12px rgba(40,30,50,.1);outline:none}
+
+/* Apology & Make Up: polished feature panel inside the single experience card */
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-title-card{width:min(620px,100%);min-height:0;border-radius:28px}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-card-inner{padding:34px clamp(22px,5vw,42px) 30px;border-radius:27px}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-card-label{color:#49684e;letter-spacing:.18em}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-title-card h1{color:#294b36;text-shadow:0 2px 14px rgba(73,104,78,.1)}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-card-kicker{color:#49684e}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-divider{color:#9aa978}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-description{color:#4b5c4e}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .single-wish-package{border-color:rgba(73,104,78,.2);background:rgba(255,255,255,.48);border-radius:14px}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none;gap:9px;margin:19px auto 22px}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights li{min-height:42px;display:flex;align-items:center;padding:10px 11px 10px 29px;border:1px solid rgba(73,104,78,.16);border-radius:11px;background:linear-gradient(145deg,rgba(255,255,255,.74),rgba(234,243,231,.68));box-shadow:0 4px 10px rgba(30,54,36,.045);color:#3f5543;font-size:11px;line-height:1.45}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights li:before{left:11px;top:11px;color:#6c8a66;font-size:10px}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-cta{box-shadow:0 8px 17px rgba(49,89,57,.18)}
+@media(max-width:520px){.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights{grid-template-columns:1fr;gap:8px}.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-card-inner{padding:29px 19px 23px}}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .apology-emblem{color:#668767;background:radial-gradient(circle,rgba(255,255,255,.78),rgba(220,235,218,.5) 70%,transparent 72%);border:1px solid rgba(73,104,78,.18);border-radius:50%;filter:drop-shadow(0 4px 8px rgba(49,89,57,.12))}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .apology-emblem svg{width:44px;height:44px;stroke:currentColor;stroke-width:1.8;fill:none}
+
+/* Match Apology's feature panels to the shared glass-tray treatment */
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights li{background:linear-gradient(145deg,rgba(255,255,255,.62),rgba(255,255,255,.28));backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-color:rgba(255,255,255,.68);box-shadow:inset 0 1px rgba(255,255,255,.65),0 5px 15px rgba(38,36,40,.06)}
+
+/* Apology feature list follows the shared single-column layout */
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights{grid-template-columns:1fr!important}
+
+/* Love Confession: rose and berry tones separate it from Birthday Celebration */
+.birthday-experience-page[data-wish-experience="love-confession"]{--t-bg:#f7e7eb;--t-header:rgba(255,248,249,.97);--t-header-line:rgba(157,54,85,.22);--t-tint:rgba(232,159,178,.66);--t-accent:#9d3655;--t-glow:rgba(232,159,178,.5);--t-cta:#9d3655;--t-cta-hover:#b74c69;--t-cta-border:#d9a0b1;--t-inner-bg:#fff1f4;--t-inner-grad:rgba(232,159,178,.42);--t-shadow:rgba(112,42,64,.15);--t-shadow-hover:rgba(112,42,64,.2)}
+.birthday-experience-page[data-wish-experience="love-confession"] .birthday-title-card h1{color:#65243a}
+.birthday-experience-page[data-wish-experience="love-confession"] .birthday-description{color:#66454d}
+
+/* Apology & Make Up single product card: blue-indigo grid reference. */
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-title-card{
+  border:1px solid rgba(151,171,210,.78)!important;
+  background-color:#2c3d61!important;
+  background-image:linear-gradient(145deg,rgba(28,41,67,.42),rgba(27,39,64,.68)),url("apology-grid-texture.png")!important;
+  background-repeat:no-repeat,repeat!important;
+  background-size:cover,46px 40px!important;
+  box-shadow:0 24px 55px rgba(15,23,42,.3),0 0 32px rgba(112,139,191,.13),inset 0 1px rgba(226,235,250,.18)!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-card-inner{
+  border:1px solid rgba(187,201,226,.23)!important;
+  background:linear-gradient(150deg,rgba(41,57,88,.72),rgba(26,38,62,.78))!important;
+  box-shadow:inset 0 1px rgba(225,233,248,.12)!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-card-label,
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-card-kicker,
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-divider{
+  color:#c6d2e9!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-title-card h1,
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-subtitle{
+  color:#f0f2f7!important;
+  text-shadow:0 2px 16px rgba(9,16,31,.45)!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-description{color:#d7deeb!important}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .single-wish-package{
+  border-color:rgba(173,191,224,.35)!important;
+  background:rgba(203,216,239,.1)!important;
+  color:#e4eaf4!important;
+  box-shadow:inset 0 1px rgba(230,237,248,.12),0 8px 20px rgba(8,15,29,.18)!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .single-wish-package-heading,
+.birthday-experience-page[data-wish-experience="apology-makeup"] .single-wish-package-heading strong{color:#f0f2f7!important}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights li{
+  border-color:rgba(188,204,232,.29)!important;
+  background:linear-gradient(145deg,rgba(185,202,231,.15),rgba(185,202,231,.07))!important;
+  color:#e6ebf4!important;
+  box-shadow:inset 0 1px rgba(227,235,248,.13),0 5px 15px rgba(8,15,29,.17)!important;
+  backdrop-filter:blur(12px)!important;
+  -webkit-backdrop-filter:blur(12px)!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-highlights li:before{color:#bdcbe4!important}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .apology-emblem{
+  color:#d1dcef!important;
+  border-color:rgba(183,201,230,.4)!important;
+  background:radial-gradient(circle,rgba(201,216,240,.2),rgba(106,130,173,.13) 70%,transparent 72%)!important;
+  filter:drop-shadow(0 4px 12px rgba(8,16,32,.3))!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-cta{
+  border:1px solid rgba(196,211,237,.7)!important;
+  background:linear-gradient(135deg,#52688f,#364b73)!important;
+  color:#fff!important;
+  box-shadow:0 10px 24px rgba(11,20,38,.32),inset 0 1px rgba(231,238,250,.24)!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-cta:hover,
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-cta:focus-visible{
+  background:linear-gradient(135deg,#6079a5,#40577f)!important;
+  box-shadow:0 13px 28px rgba(11,20,38,.38),0 0 18px rgba(147,171,211,.17)!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-back-link{
+  color:#e1e8f4!important;
+  border-color:rgba(181,198,226,.38)!important;
+  background:rgba(38,54,83,.5)!important;
+}
+.birthday-experience-page[data-wish-experience="apology-makeup"] .birthday-back-link:hover{background:rgba(53,73,109,.72)!important}

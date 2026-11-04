@@ -1,0 +1,203 @@
+/* Dark, individually art-directed WishVerse category cards. */
+.wish-category-grid .wish-category{--wish-accent:#e2c792;position:relative;color:#fff8f0;border-color:rgba(230,205,167,.35);background:linear-gradient(145deg,var(--wish-surface),var(--wish-shadow));box-shadow:0 16px 34px rgba(27,13,25,.24),inset 0 1px rgba(255,255,255,.16);transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease,filter .28s ease}
+.wish-category-grid .wish-category:before{background:linear-gradient(145deg,var(--tone1),var(--tone2) 55%,rgba(255,255,255,.025));opacity:.58}
+.wish-category-grid .wish-category:after{background:radial-gradient(ellipse,var(--wish-glow),transparent 69%)}
+.wish-category-grid .wish-category:hover,.wish-category-grid .wish-category:focus-visible{transform:translateY(-6px);border-color:rgba(244,222,183,.78);box-shadow:0 24px 46px rgba(27,13,25,.32),inset 0 1px rgba(255,255,255,.24);filter:saturate(1.1);outline:none}
+.wish-category-grid .category-number{color:var(--wish-accent)}
+.wish-category-grid .category-art{isolation:isolate;border-color:rgba(255,255,255,.24);background:var(--wish-art);box-shadow:inset 0 1px rgba(255,255,255,.2),0 8px 18px rgba(18,9,17,.22)}
+.wish-category-grid .category-art:before,.wish-category-grid .category-art:after{content:"";position:absolute;z-index:-1;pointer-events:none}
+.wish-category-grid .category-art i{position:relative;z-index:1;color:var(--wish-copy);text-shadow:0 2px 14px rgba(15,7,13,.28)}
+.wish-category-grid .category-art b{z-index:1;color:var(--wish-accent);text-shadow:0 0 15px var(--wish-glow)}
+.wish-category-grid .wish-category h3{color:#fff8f0}
+.wish-category-grid .wish-category p{color:rgba(255,248,240,.78)}
+.wish-category-grid .category-explore{color:var(--wish-accent);border-color:rgba(255,248,240,.2)}
+
+.wish-category-grid .date-invitation{--wish-surface:#392238;--wish-shadow:#542e49;--wish-accent:#e7c99e;--wish-copy:#fff0df;--wish-glow:rgba(217,153,176,.28);--tone1:rgba(137,91,151,.42);--tone2:rgba(207,130,146,.22);--wish-art:radial-gradient(ellipse at 74% 26%,rgba(244,196,175,.55),transparent 24%),radial-gradient(ellipse at 20% 86%,rgba(197,149,187,.4),transparent 32%),linear-gradient(145deg,#251a31,#68405d)}
+.wish-category-grid .date-invitation .category-art:before{width:72%;height:1px;left:14%;top:30%;background:rgba(238,209,174,.65);transform:rotate(-24deg)}
+.wish-category-grid .date-invitation .category-art:after{width:78px;height:78px;right:-10px;bottom:-35px;border:1px solid rgba(238,209,174,.35);border-radius:50%;box-shadow:0 0 0 10px rgba(238,209,174,.06)}
+
+.wish-category-grid .birthday-celebration{--wish-surface:#522432;--wish-shadow:#792f43;--wish-accent:#f1d58f;--wish-copy:#fff1dc;--wish-glow:rgba(238,174,116,.3);--tone1:rgba(205,97,104,.42);--tone2:rgba(224,159,90,.22);--wish-art:radial-gradient(circle at 19% 22%,#f1d58f 0 2px,transparent 3px),radial-gradient(circle at 80% 30%,#ed9c9b 0 3px,transparent 4px),radial-gradient(circle at 27% 78%,#dab1ce 0 2px,transparent 3px),linear-gradient(145deg,#612738,#a54b55 58%,#cf8961)}
+.wish-category-grid .birthday-celebration .category-art:before{width:24px;height:31px;left:17%;top:22%;border-radius:50% 50% 45% 45%;background:radial-gradient(circle at 35% 28%,#fff0c7,#d8a759 74%);box-shadow:26px 7px 0 -3px #da8982,49px -1px 0 -4px #c5a0c6}
+.wish-category-grid .birthday-celebration .category-art:after{width:37px;height:23px;right:13%;bottom:12%;border-radius:4px;background:linear-gradient(180deg,#f1d2a3 0 38%,#b74e5a 39% 56%,#edd19c 57%)}
+
+.wish-category-grid .gift-presentation{--wish-surface:#45182a;--wish-shadow:#6b263d;--wish-accent:#e8d19c;--wish-copy:#fff4e6;--wish-glow:rgba(214,184,120,.3);--tone1:rgba(200,166,106,.36);--tone2:rgba(222,166,161,.22);--wish-art:linear-gradient(135deg,transparent 0 42%,rgba(230,206,171,.3) 43% 44%,transparent 45%),radial-gradient(ellipse at 50% 47%,rgba(233,196,170,.38),transparent 48%),linear-gradient(145deg,#321020,#7d3548)}
+.wish-category-grid .gift-presentation .category-art:before{width:54px;height:46px;left:calc(50% - 27px);top:34%;border:1px solid rgba(246,228,198,.8);border-radius:4px;background:linear-gradient(90deg,transparent 46%,rgba(246,228,198,.72) 47% 53%,transparent 54%),linear-gradient(0deg,transparent 43%,rgba(246,228,198,.72) 44% 52%,transparent 53%);box-shadow:0 8px 20px rgba(12,8,20,.24)}
+.wish-category-grid .gift-presentation .category-art:after{width:24px;height:12px;left:calc(50% - 12px);top:25%;border:1px solid #ead7b3;border-radius:50% 50% 0 50%;transform:rotate(45deg)}
+
+.wish-category-grid .marriage-proposal{--wish-surface:#361c2a;--wish-shadow:#642e44;--wish-accent:#f0c4b9;--wish-copy:#fff0e8;--wish-glow:rgba(222,139,159,.29);--tone1:rgba(181,79,112,.42);--tone2:rgba(229,156,145,.2);--wish-art:radial-gradient(ellipse at 55% 45%,rgba(226,166,159,.45),transparent 34%),linear-gradient(145deg,#291521,#77354d 60%,#a85665)}
+.wish-category-grid .marriage-proposal .category-art:before{width:62px;height:62px;left:calc(50% - 31px);top:calc(50% - 31px);border:1px solid rgba(242,211,170,.78);border-radius:50%;box-shadow:0 0 0 8px rgba(242,211,170,.08),inset 0 0 24px rgba(246,194,188,.12)}
+.wish-category-grid .marriage-proposal .category-art:after{width:18px;height:18px;left:calc(50% - 9px);top:calc(50% - 9px);border:2px solid #e7cf9f;border-radius:50%;box-shadow:0 0 0 4px rgba(231,207,159,.16)}
+
+.wish-category-grid .love-confession{--wish-surface:#3c1827;--wish-shadow:#76263d;--wish-accent:#f3b6c2;--wish-copy:#fff0f4;--wish-glow:rgba(236,107,143,.32);--tone1:rgba(202,69,109,.42);--tone2:rgba(237,145,169,.22);--wish-art:radial-gradient(ellipse at 48% 65%,rgba(194,57,94,.65),transparent 48%),linear-gradient(145deg,#26111f,#72243f)}
+.wish-category-grid .love-confession .category-art:before{content:"♥";right:18%;top:12%;color:rgba(248,191,203,.72);font:34.56px/1 Georgia,serif;transform:rotate(12deg)}
+.wish-category-grid .love-confession .category-art:after{width:80px;height:80px;left:-31px;bottom:-45px;border:1px solid rgba(239,170,188,.3);border-radius:50%;box-shadow:0 0 0 9px rgba(239,170,188,.05)}
+
+.wish-category-grid .anniversary-surprise{--wish-surface:#35232d;--wish-shadow:#624052;--wish-accent:#e7c697;--wish-copy:#fff0df;--wish-glow:rgba(218,182,129,.28);--tone1:rgba(162,107,132,.39);--tone2:rgba(215,165,143,.2);--wish-art:radial-gradient(ellipse at 50% 28%,rgba(243,214,171,.38),transparent 26%),linear-gradient(145deg,#2e1c29,#725062 58%,#98745f)}
+.wish-category-grid .anniversary-surprise .category-art:before{width:56px;height:56px;left:calc(50% - 28px);top:calc(50% - 28px);border:1px solid rgba(238,211,168,.72);border-radius:50%;box-shadow:0 0 0 8px rgba(238,211,168,.07)}
+.wish-category-grid .anniversary-surprise .category-art:after{width:80px;height:1px;left:calc(50% - 40px);top:50%;background:rgba(238,211,168,.55);transform:rotate(-22deg)}
+
+.wish-category-grid .apology-makeup{--wish-surface:#26312e;--wish-shadow:#405448;--wish-accent:#d6d4ad;--wish-copy:#eff5e9;--wish-glow:rgba(170,196,160,.26);--tone1:rgba(118,151,128,.4);--tone2:rgba(194,183,142,.19);--wish-art:radial-gradient(ellipse at 80% 20%,rgba(212,218,174,.34),transparent 26%),linear-gradient(145deg,#202c2b,#4d6456 58%,#82775a)}
+.wish-category-grid .apology-makeup .category-art:before{width:62px;height:62px;left:calc(50% - 31px);top:calc(50% - 31px);border:1px solid rgba(220,224,184,.65);border-radius:50%}
+.wish-category-grid .apology-makeup .category-art:after{width:36px;height:36px;left:calc(50% - 18px);top:calc(50% - 18px);border:1px solid rgba(220,224,184,.5);border-radius:50%;box-shadow:0 0 0 8px rgba(220,224,184,.06)}
+
+.wish-category-grid .signature-wish{--wish-surface:#4a2430;--wish-shadow:#7a3f45;--wish-accent:#f2d3b0;--wish-copy:#fff1e6;--wish-glow:rgba(255,198,168,.28);--tone1:rgba(255,198,168,.3);--tone2:rgba(166,111,139,.21);--wish-art:linear-gradient(135deg,#b8715f 0 28%,transparent 29%),linear-gradient(45deg,transparent 0 45%,#9a6d82 46% 74%,transparent 75%),linear-gradient(145deg,#381a26,#7a4650)}
+.wish-category-grid .signature-wish .category-art:before{width:54px;height:47px;left:14%;top:18%;border:1px solid #ead8b8;background:linear-gradient(145deg,rgba(244,200,170,.75),rgba(168,96,90,.7));transform:rotate(-9deg);box-shadow:30px 17px 0 -1px #705466,30px 17px 0 0 #ead8b8}
+.wish-category-grid .signature-wish .category-art:after{width:42px;height:32px;right:12%;bottom:13%;border:1px solid #ead8b8;background:linear-gradient(145deg,rgba(216,178,137,.8),rgba(92,70,105,.85));transform:rotate(8deg)}
+@media(max-width:760px){.wish-category-grid .wish-category{box-shadow:0 13px 28px rgba(27,13,25,.2),inset 0 1px rgba(255,255,255,.15)}}
+@media(prefers-reduced-motion:reduce){.wish-category-grid .wish-category,.wish-category-grid .category-art:after{transition:none}}
+
+/* Ensure every category label stays high-contrast over the dark glass surfaces. */
+.wish-category-grid .wish-category>*{position:relative;z-index:1}
+.wish-category-grid .wish-category .category-number{color:#f1d69e;text-shadow:0 1px 6px rgba(12,7,13,.62)}
+.wish-category-grid .wish-category h3{color:#fffaf4;text-shadow:0 1px 8px rgba(12,7,13,.72)}
+.wish-category-grid .wish-category p{color:#f5ece6;text-shadow:0 1px 6px rgba(12,7,13,.68)}
+.wish-category-grid .wish-category .category-explore{color:#f1d69e;text-shadow:0 1px 5px rgba(12,7,13,.62)}
+.wish-category-grid .category-art i{color:#fff4e8;text-shadow:0 2px 10px rgba(12,7,13,.8)}
+.wish-category-grid .category-art b{color:#f1d69e;text-shadow:0 0 12px rgba(245,211,155,.55)}
+
+/* Keep category artwork lettering clean, with no backing shape. */
+.wish-category-grid .category-art i{position:relative;z-index:3;display:inline-block;max-width:calc(100% - 20px);padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#fff8f0;text-shadow:0 2px 4px rgba(13,7,12,.95),0 0 14px rgba(13,7,12,.6)}
+
+/* Simplify the busy cover-art backdrops behind the category lettering. */
+.wish-category-grid .category-art{background:var(--wish-art-surface)!important}
+.wish-category-grid .category-art:before,.wish-category-grid .category-art:after{display:none!important}
+.wish-category-grid .category-art i{z-index:3;padding:0;border:0;background:transparent;box-shadow:none;color:#fffaf2;font:600 22.68px/1.08 var(--wv-serif);letter-spacing:.01em;text-shadow:0 2px 5px rgba(0,0,0,.92)}
+.wish-category-grid .category-art b{z-index:1;right:8%;top:8%;opacity:.62}
+.wish-category-grid .date-invitation{--wish-art-surface:#3d1c33}
+.wish-category-grid .birthday-celebration{--wish-art-surface:#55263a}
+.wish-category-grid .gift-presentation{--wish-art-surface:#4a1a2c}
+.wish-category-grid .marriage-proposal{--wish-art-surface:#3a1424}
+.wish-category-grid .love-confession{--wish-art-surface:#5a1f35}
+.wish-category-grid .anniversary-surprise{--wish-art-surface:#4d2a2f}
+.wish-category-grid .apology-makeup{--wish-art-surface:#2e3f35}
+.wish-category-grid .signature-wish{--wish-art-surface:#5a2c33}
+.wish-category-grid .wish-category[aria-pressed="true"]{border-color:#e2c792;box-shadow:inset 0 0 0 2px #e2c792,0 16px 34px rgba(27,13,25,.3)}
+.wish-category-grid .wish-category[aria-pressed="false"]{background:linear-gradient(145deg,#fffaf1,#f3eadb);border-color:rgba(107,38,61,.16);box-shadow:0 10px 26px rgba(34,32,37,.08),inset 0 1px rgba(255,255,255,.92);color:#382b2b}
+.wish-category-grid .wish-category[aria-pressed="false"] .category-number{color:#826f50;text-shadow:none}
+.wish-category-grid .wish-category[aria-pressed="false"] h3{color:#6b263d;text-shadow:none}
+.wish-category-grid .wish-category[aria-pressed="false"] p{color:#59413c;text-shadow:none}
+.wish-category-grid .wish-category[aria-pressed="false"] .category-explore{color:#6b263d;text-shadow:none;border-top-color:rgba(107,38,61,.14)}
+.wish-category-grid .wish-category[aria-pressed="true"]{background:linear-gradient(145deg,#6b263d,#4a1a2c);border:2px solid #c8a66a;box-shadow:inset 0 0 0 1px rgba(246,235,216,.2),0 14px 30px rgba(107,38,61,.24);color:#f6ebd8}
+.wish-category-grid .wish-category[aria-pressed="true"] .category-number{color:#e4c786;text-shadow:none}
+.wish-category-grid .wish-category[aria-pressed="true"] h3{color:#fff8f0;text-shadow:none}
+.wish-category-grid .wish-category[aria-pressed="true"] p{color:#f6ebd8;text-shadow:none}
+.wish-category-grid .wish-category[aria-pressed="true"] .category-explore{color:#f0d694;text-shadow:none;border-top-color:rgba(246,235,216,.35)}
+.wish-category-grid .wish-selected-badge{display:flex;position:absolute;top:12px;right:12px;z-index:5;align-items:center;opacity:0;visibility:hidden;transform:translateY(-3px);transition:opacity .2s ease,transform .2s ease,visibility .2s ease;gap:6px;padding:6px 9px;border:1px solid #f0d694;border-radius:999px;background:#f6ebd8;color:#6b263d;font:700 9px/1 var(--wv-sans);letter-spacing:.08em}
+.wish-category-grid .wish-selected-badge span{display:grid;width:17px;height:17px;place-items:center;border-radius:50%;background:#6b263d;color:#f6ebd8;font-size:12px;line-height:1}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-selected-badge{opacity:1;visibility:visible;transform:translateY(0)}
+.wish-category-grid .wish-category{transition:background-color .22s ease,background-image .22s ease,color .22s ease,border-color .22s ease,box-shadow .22s ease,transform .22s ease}
+.wish-selection-actions [data-selected-count]{display:inline-flex;align-items:center;width:max-content;max-width:100%;padding:8px 12px;border:1px solid rgba(107,38,61,.2);border-radius:999px;background:#6b263d;color:#f6ebd8;font-size:12px;font-weight:700;letter-spacing:.02em}
+.wish-selection-actions #continue-to-wish{background:#6b263d;color:#f6ebd8;border:1px solid #c8a66a;box-shadow:0 8px 18px rgba(107,38,61,.16)}
+.wish-selection-actions #continue-to-wish:hover:not(:disabled){background:#4a1a2c;box-shadow:0 10px 22px rgba(107,38,61,.22)}
+.wish-selection-actions #continue-to-wish:disabled{opacity:.48}
+@media(max-width:760px){.wish-category-grid .wish-selected-badge{top:9px;right:9px;padding:6px 8px;font-size:8px}.wish-category-grid .wish-selected-badge span{width:16px;height:16px}}
+
+/* WishVerse category titles sit above their description cards; the full link remains clickable. */
+.wish-category-grid .wish-category{display:flex;flex-direction:column;gap:0;min-width:0;min-height:326px;padding:0;overflow:visible;border:0;border-radius:0;background:transparent!important;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none!important;isolation:auto;transform:none}
+.wish-category-grid .wish-category:before,.wish-category-grid .wish-category:after{display:none}
+.wish-category-grid .wish-category h3{position:relative;z-index:1;min-height:45px;margin:0 0 9px;color:#6b263d!important;text-shadow:none!important;font:600 20px/1.12 var(--wv-serif)}
+.wish-category-grid .wish-category-card{position:relative;isolation:isolate;display:flex;flex:1;flex-direction:column;min-height:272px;padding:15px 16px 13px;overflow:hidden;border:1px solid rgba(107,38,61,.16);border-radius:18px;background:linear-gradient(145deg,#fffaf1,#f3eadb);box-shadow:0 10px 26px rgba(34,32,37,.08),inset 0 1px rgba(255,255,255,.92);color:#382b2b;transition:background-color .22s ease,background-image .22s ease,border-color .22s ease,box-shadow .22s ease,transform .22s ease}
+.wish-category-grid .wish-category-card:before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;background:linear-gradient(145deg,var(--tone1),var(--tone2) 55%,rgba(255,255,255,.16));opacity:.4;pointer-events:none}
+.wish-category-grid .wish-category-card:after{content:"";position:absolute;right:-58px;top:-78px;z-index:-1;width:170px;height:160px;border-radius:50%;background:radial-gradient(ellipse,rgba(255,255,255,.52),transparent 68%);transition:transform .45s;pointer-events:none}
+.wish-category-grid .wish-category:hover .wish-category-card,.wish-category-grid .wish-category:focus-visible .wish-category-card{transform:translateY(-3px);border-color:#c8a66a;box-shadow:0 15px 30px rgba(107,38,61,.13),inset 0 1px rgba(255,255,255,.92)}
+.wish-category-grid .wish-category:hover .wish-category-card:after{transform:translate(-12px,15px)}
+.wish-category-grid .wish-category-card>*{position:relative;z-index:1}
+.wish-category-grid .wish-category-card .category-number{color:#826f50;text-shadow:none}
+.wish-category-grid .wish-category-card p{margin:0 0 10px;color:#59413c;font-size:12px;line-height:1.55;text-shadow:none}
+.wish-category-grid .wish-category-card .category-explore{margin-top:auto;color:#6b263d;text-shadow:none;border-top-color:rgba(107,38,61,.14)}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-card{border:2px solid #c8a66a;background:linear-gradient(145deg,#6b263d,#4a1a2c);box-shadow:inset 0 0 0 1px rgba(246,235,216,.2),0 14px 30px rgba(107,38,61,.24);color:#f6ebd8}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-card .category-number{color:#e4c786}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-card p{color:#f6ebd8}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-card .category-explore{color:#f0d694;border-top-color:rgba(246,235,216,.35)}
+.wish-category-grid .wish-category-card .wish-selected-badge{position:absolute;top:12px;right:12px;z-index:5}
+.wish-category-grid .wish-category-card .category-art{flex:none}
+@media(max-width:980px){.wish-category-grid .wish-category{min-height:300px}.wish-category-grid .wish-category-card{min-height:252px}}
+@media(max-width:480px){.wish-category-grid .wish-category{min-height:286px}.wish-category-grid .wish-category h3{min-height:27px;margin-bottom:7px;font-size:20px}.wish-category-grid .wish-category-card{min-height:250px;padding:14px}.wish-category-grid .wish-category-card p{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.wish-category-grid .wish-category-card,.wish-category-grid .wish-category-card:after{transition:none}}
+
+
+
+/* Context copy becomes the heading above; category names stay within each artwork card. */
+.wish-category-grid .wish-category .wish-category-context{display:block;min-height:0;margin:8px 0 5px;color:#6b263d;text-shadow:none;font:600 16px/1.2 var(--wv-serif);letter-spacing:.01em}
+.wish-category-grid .wish-category .category-art-title{position:relative;z-index:3;display:inline-block;max-width:calc(100% - 34px);min-height:0;margin:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#fffaf2!important;text-align:center;text-transform:uppercase;font:600 clamp(13px,1.25vw,18px)/1.12 var(--wv-serif);letter-spacing:.035em;text-shadow:0 2px 5px rgba(0,0,0,.92)}
+.wish-category-grid .wish-category[aria-pressed="true"] .category-art-title{color:#fffaf2!important}.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-context{color:#e4c786}
+@media(max-width:480px){.wish-category-grid .wish-category .wish-category-context{margin-top:7px;font-size:16px}.wish-category-grid .wish-category .category-art-title{font-size:clamp(15px,4.2vw,20px)}}
+.wish-category-grid .date-invitation .wish-category-context{white-space:nowrap}
+
+
+/* Love Confession card: feature list in place of the one-line description */
+.wish-category-grid .love-confession .category-features{margin:0 0 10px;padding:0;list-style:none;display:grid;gap:4px}
+.wish-category-grid .love-confession .category-features li{position:relative;padding-left:14px;color:#59413c;font-size:11.5px;line-height:1.4;text-shadow:none}
+.wish-category-grid .love-confession .category-features li:before{content:"✦";position:absolute;left:0;top:1px;color:#9a4a63;font-size:8px}
+.wish-category-grid .love-confession[aria-pressed="true"] .category-features li{color:#f6ebd8}
+.wish-category-grid .love-confession[aria-pressed="true"] .category-features li:before{color:#e2cc9c}
+
+/* Each WishVerse tile has its own context colour, drawn from the brand palette (same hues as its experience page). */
+.wish-category-grid .date-invitation{--wc:#566a8c;--wish-art-surface:#566a8c;--tone1:rgba(86,106,140,.42);--tone2:rgba(86,106,140,.16)} /* Twilight blue */
+.wish-category-grid .birthday-celebration{--wc:#a8475f;--wish-art-surface:#a8475f;--tone1:rgba(168,71,95,.42);--tone2:rgba(168,71,95,.16)} /* Rose */
+.wish-category-grid .gift-presentation{--wc:#3f2736;--wish-art-surface:#3f2736;--tone1:rgba(63,39,54,.42);--tone2:rgba(63,39,54,.16)} /* Aubergine with gold */
+.wish-category-grid .marriage-proposal{--wc:#5a1728;--wish-art-surface:#5a1728;--tone1:rgba(90,23,40,.42);--tone2:rgba(90,23,40,.16)} /* Deep burgundy */
+.wish-category-grid .love-confession{--wc:#6b4a8a;--wish-art-surface:#6b4a8a;--tone1:rgba(107,74,138,.42);--tone2:rgba(107,74,138,.16)} /* Plum */
+.wish-category-grid .anniversary-surprise{--wc:#8a6a2c;--wish-art-surface:#8a6a2c;--tone1:rgba(138,106,44,.42);--tone2:rgba(138,106,44,.16)} /* Champagne gold */
+.wish-category-grid .apology-makeup{--wc:#4d7153;--wish-art-surface:#4d7153;--tone1:rgba(77,113,83,.42);--tone2:rgba(77,113,83,.16)} /* Sage */
+.wish-category-grid .signature-wish{--wc:#b0694f;--wish-art-surface:#b0694f;--tone1:rgba(176,105,79,.42);--tone2:rgba(176,105,79,.16)} /* Peach terracotta */
+.wish-category-grid .wish-category-card:before{opacity:.62}
+.wish-category-grid .wish-category .wish-category-card{border-color:color-mix(in srgb,var(--wc) 38%,transparent)}
+.wish-category-grid .wish-category .wish-category-card .category-number,.wish-category-grid .wish-category .wish-category-card .category-explore{color:var(--wc)}
+.wish-category-grid .wish-category .wish-category-card .category-explore{border-top-color:color-mix(in srgb,var(--wc) 22%,transparent)}
+.wish-category-grid .wish-category .category-art{box-shadow:inset 0 1px rgba(255,255,255,.28),0 10px 20px color-mix(in srgb,var(--wc) 32%,transparent)}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-card{background:linear-gradient(145deg,var(--wc),color-mix(in srgb,var(--wc) 70%,#2a0c19))}
+/* Anniversary Surprise: refined wedding champagne, with a soft pearl sheen and rose-gold depth. */
+.wish-category-grid .anniversary-surprise{--wc:#9a7840;--wish-art-surface:radial-gradient(ellipse at 28% 16%,rgba(255,244,214,.42),transparent 54%),linear-gradient(145deg,#b4925a,#97763f 52%,#7a5a33);--tone1:rgba(196,160,98,.46);--tone2:rgba(238,214,176,.2)}
+
+/* Light parchment WishVerse cards with distinct woven title panels */
+.wish-category-grid .wish-category{color:#59413c;border:1px solid #d8cfc8;background:linear-gradient(145deg,#fffaf5,#f5eadf);box-shadow:0 12px 26px rgba(75,54,48,.09),inset 0 1px rgba(255,255,255,.85)}
+.wish-category-grid .wish-category:before{background:linear-gradient(145deg,var(--tile-tint),rgba(255,255,255,.12));opacity:.72}
+.wish-category-grid .wish-category:after{background:radial-gradient(ellipse,rgba(255,255,255,.46),transparent 70%)}
+.wish-category-grid .wish-category:hover,.wish-category-grid .wish-category:focus-visible{border-color:#c79a4b;box-shadow:0 18px 32px rgba(75,54,48,.13),inset 0 1px #fff}
+.wish-category-grid .category-number{color:#8c7955}
+.wish-category-grid .category-art{border:1px solid rgba(42,31,40,.22);background-color:var(--title-color);background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.055) 0 1px,transparent 1px 5px),repeating-linear-gradient(90deg,rgba(255,255,255,.055) 0 1px,transparent 1px 5px),linear-gradient(145deg,var(--title-color),var(--title-shade));box-shadow:inset 0 1px rgba(255,255,255,.12),0 8px 14px rgba(35,26,30,.16)}
+.wish-category-grid .category-art:before,.wish-category-grid .category-art:after{content:none!important;display:none!important}
+.wish-category-grid .wish-category h3{color:#fff9f1;text-shadow:0 1px 2px rgba(0,0,0,.16)}
+.wish-category-grid .wish-category p{color:#65524c}
+.wish-category-grid .wish-category-context{color:#123b86}
+.wish-category-grid .category-explore{color:#123b86;border-color:rgba(18,59,134,.2)}
+.wish-category-grid .date-invitation{--tile-tint:rgba(183,153,147,.16);--title-color:#85736f;--title-shade:#6f5e5d}
+.wish-category-grid .birthday-celebration{--tile-tint:rgba(221,181,113,.16);--title-color:#552331;--title-shade:#3e1725}
+.wish-category-grid .gift-presentation{--tile-tint:rgba(132,129,174,.14);--title-color:#302d4e;--title-shade:#211f39}
+.wish-category-grid .marriage-proposal{--tile-tint:rgba(181,133,145,.15);--title-color:#492431;--title-shade:#311824}
+.wish-category-grid .love-confession{--tile-tint:rgba(224,144,155,.2);--title-color:#542037;--title-shade:#3c1429}
+.wish-category-grid .anniversary-surprise{--tile-tint:rgba(170,139,137,.15);--title-color:#45333b;--title-shade:#30232a}
+.wish-category-grid .apology-makeup{--tile-tint:rgba(171,188,157,.17);--title-color:#344940;--title-shade:#24372e}
+.wish-category-grid .signature-wish{--tile-tint:rgba(142,137,166,.15);--title-color:#353446;--title-shade:#252433}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-card{background:linear-gradient(145deg,#fff9f2,#f4e8dc);border-color:#c79a4b;box-shadow:inset 0 0 0 1px rgba(199,154,75,.16),0 12px 26px rgba(75,54,48,.1);color:#59413c}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-card .category-number{color:#8c7955}
+.wish-category-grid .wish-category[aria-pressed="true"] .wish-category-card p{color:#65524c}
+
+/* Replace Apology's former sage accents with the supplied blue-indigo palette. */
+.wish-category-grid .apology-makeup{
+  --wish-surface:#e5ecf5!important;
+  --wish-shadow:#485f86!important;
+  --wish-accent:#536b94!important;
+  --wish-copy:#344765!important;
+  --wish-glow:rgba(103,130,177,.2)!important;
+  --tone1:rgba(126,151,192,.28)!important;
+  --tone2:rgba(191,207,229,.32)!important;
+  --wish-art:linear-gradient(145deg,#35486f,#2b3d62)!important;
+  --wish-art-surface:#35486f!important;
+  --wc:#536b94!important;
+  --tile-tint:rgba(142,164,199,.18)!important;
+  --title-color:#35486f!important;
+  --title-shade:#263858!important;
+}
+.wish-category-grid .apology-makeup .category-art{
+  border-color:rgba(151,173,208,.85)!important;
+  background-color:#35486f!important;
+  background-image:linear-gradient(rgba(39,55,86,.2),rgba(28,41,67,.38)),url("apology-grid-texture.png")!important;
+  background-repeat:no-repeat,repeat!important;
+  background-size:cover,46px 40px!important;
+  box-shadow:inset 0 1px rgba(238,243,251,.25),0 8px 18px rgba(37,53,81,.18)!important;
+}
+.wish-category-grid .apology-makeup .category-art-title{color:#f4f6fb!important;text-shadow:0 2px 8px rgba(20,31,51,.38)!important}
+.wish-category-grid .apology-makeup .category-art:before,
+.wish-category-grid .apology-makeup .category-art:after{border-color:rgba(194,207,232,.66)!important;box-shadow:0 0 0 8px rgba(194,207,232,.07)!important}

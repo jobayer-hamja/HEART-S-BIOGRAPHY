@@ -1,0 +1,51 @@
+/* Love Confession title card — a calm, soft, premium finish. Scoped to this experience only. */
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"]{
+  --t-bg:#f3ebf3;--t-header:rgba(251,246,250,.96);--t-header-line:rgba(138,74,110,.18);
+  --t-tint:rgba(231,190,208,.55);--t-glow:rgba(214,196,234,.48);--t-accent:#8a4a6e;
+  --t-cta:#7a3555;--t-cta-hover:#90456a;--t-cta-border:#d9bd86;
+  --love-ink:#6b263d;--love-soft:#9a6a86;--love-text:#5f4452;--love-gold:#c8a66a;
+}
+/* Gold-to-blush hairline frame around the card */
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-title-card{
+  padding:1px;border:0;border-radius:30px;
+  background:linear-gradient(150deg,#ecd9ab,#f6e6ec 36%,#dcc08a 68%,#efdcb4);
+  box-shadow:0 26px 64px rgba(107,38,61,.14),0 0 70px rgba(214,196,234,.35)}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-title-card:hover{
+  box-shadow:0 30px 70px rgba(107,38,61,.17),0 0 80px rgba(214,196,234,.42)}
+/* Smooth, texture-free surface: ivory → blush → lilac mist */
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-card-inner{
+  border-radius:29px;background-color:#fbf4f6;
+  background-image:radial-gradient(ellipse at 50% 0%,rgba(233,165,177,.2),transparent 52%),radial-gradient(ellipse at 50% 108%,rgba(201,184,232,.34),transparent 58%),linear-gradient(170deg,#fffaf6,#fbeff3 52%,#f1e8f5);
+  background-size:auto;background-repeat:no-repeat;box-shadow:inset 0 1px rgba(255,255,255,.95)}
+/* Fine inner keyline for a framed, quiet feel */
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-card-inner:after{
+  content:""!important;display:block!important;position:absolute;inset:9px;z-index:0;width:auto;height:auto;top:9px;right:9px;
+  border:1px solid rgba(200,166,106,.34);border-radius:22px;pointer-events:none}
+/* Slow, breathing heart */
+.love-heart{display:grid;place-items:center;margin:0 auto 8px;color:var(--love-gold)}
+.love-heart svg{width:30px;height:28px;fill:rgba(233,165,177,.22);stroke:currentColor;stroke-width:1.3;stroke-linejoin:round;animation:love-breathe 7s ease-in-out infinite;filter:drop-shadow(0 3px 10px rgba(201,132,153,.3))}
+@keyframes love-breathe{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.09);opacity:1}}
+@media(prefers-reduced-motion:reduce){.love-heart svg{animation:none}}
+/* Typography */
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-card-label{color:var(--love-soft);letter-spacing:.22em}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-card-label span{color:var(--love-gold)}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-card-kicker{color:var(--love-soft);letter-spacing:.28em}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-title-card h1{color:var(--love-ink);font-weight:500;letter-spacing:-.03em;text-shadow:none}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-subtitle{color:#8a5a78;font-style:italic;font-weight:400}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-divider{color:#d4a2b4;gap:14px}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-divider span{background:linear-gradient(90deg,transparent,rgba(200,166,106,.75))}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-description{color:var(--love-text);line-height:1.8}
+/* Package panel */
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .single-wish-package{background:rgba(255,255,255,.58);border:1px solid rgba(200,166,106,.32);border-radius:18px;box-shadow:0 8px 22px rgba(107,38,61,.05)}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .single-wish-package-heading span{color:var(--love-soft)}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .single-wish-package strong{color:var(--love-ink);font-family:"Playfair Display",Georgia,serif;font-weight:600}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .single-wish-package :is(p,li){color:var(--love-text)}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .single-wish-package ul{color:var(--love-gold)}
+/* Highlights */
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-highlights li{color:var(--love-text)}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-highlights li:before{content:"♡";color:#c98499;font-size:11px;top:0}
+/* Call to action */
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-cta{background:linear-gradient(110deg,#7a3555,#6b263d);border-color:var(--t-cta-border);color:#fff8f1;box-shadow:0 12px 26px rgba(107,38,61,.22),inset 0 1px rgba(255,255,255,.18)}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-cta:hover,.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-cta:focus-visible{background:linear-gradient(110deg,#90456a,#7a3555);border-color:#ead3a0;box-shadow:0 16px 32px rgba(107,38,61,.27)}
+.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-card-signoff{color:#a07c91}
+@media(min-width:761px){.birthday-experience-page.birthday-experience-page[data-wish-experience="love-confession"] .birthday-card-inner{padding-top:30px;padding-bottom:20px}}
