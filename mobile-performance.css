@@ -121,3 +121,30 @@
     background-repeat: repeat !important;
   }
 }
+
+
+/* ---- v4: global fixes ---- */
+/* Page must never scroll sideways on phones (decorative glows used to poke out ~35px on the right). */
+html { overflow-x: hidden; }
+body { overflow-x: clip; }
+
+/* Clear focus ring for keyboard users (hover/touch look is unchanged). */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible,
+textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #c0446f !important;
+  outline-offset: 2px !important;
+}
+
+/* ---- v4b: let the body clip its own absolutely-positioned background glows on phones ---- */
+@media (max-width: 760px) {
+  body { position: relative; }
+}
+
+/* ---- v5: step row (Package / Client info / Review / WhatsApp) must fit after the font-size floor ---- */
+@media (max-width: 760px) {
+  .order-progress { flex-wrap: wrap; row-gap: 10px; column-gap: 12px; padding: 0 6px; box-sizing: border-box; }
+  .order-progress li { letter-spacing: .05em; }
+}
+
+/* ---- v6: no sideways rubber-banding on touch screens ---- */
+html, body { overscroll-behavior-x: none; }

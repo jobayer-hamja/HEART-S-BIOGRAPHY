@@ -10,7 +10,7 @@
 .quick-preview-art{min-height:280px;display:grid;place-items:center;overflow:hidden;border-radius:18px;background:linear-gradient(145deg,#392238,#6b374d);}
 .quick-preview-art.wish-card{background:linear-gradient(145deg,#29223e,#514365)}
 .quick-preview-art .mockup{transform:scale(.9)}
-.quick-preview-eyebrow{margin:0 0 9px;color:#8e685d;font-size:10px;font-weight:700;letter-spacing:.16em}
+.quick-preview-eyebrow{margin:0 0 9px;color:#8e685d;font-size:11px;font-weight:700;letter-spacing:.16em}
 .quick-preview-copy h2{margin:0 38px 10px 0;color:#481f2b;font:500 clamp(27px,4vw,38px)/1.08 var(--serif,Georgia,serif)}
 .quick-preview-copy>p:not(.quick-preview-eyebrow):not(.quick-preview-price):not(.quick-preview-feedback){margin:0 0 14px;color:#58443f;line-height:1.6;font-size:14px}
 .quick-preview-price{margin:0 0 10px;color:#481f2b;font-weight:800}

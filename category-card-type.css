@@ -1,15 +1,15 @@
 /* More readable text inside product and occasion category cards. */
-.products .product .product-tag{font-size:10.5px!important}
+.products .product .product-tag{font-size:11px!important}
 .products .product h2{font-size:clamp(25px,2.4vw,32px)!important}
 .products .product .product-desc{font-size:13px!important}
-.products .product .chip{font-size:10px!important;padding:5px 8px!important}
+.products .product .chip{font-size:11px!important;padding:5px 8px!important}
 .products .product .product-link{font-size:11.5px!important}
-.occasion-grid .occasion-card .occasion-label{font-size:10.5px!important}
+.occasion-grid .occasion-card .occasion-label{font-size:11px!important}
 .occasion-grid .occasion-card h2{font-size:22.5px!important}
 .occasion-grid .occasion-card p{font-size:12px!important}
 .occasion-grid .occasion-card .explore{font-size:12px!important}
-.occasion-grid .occasion-card.just-because p{font-size:10.8px!important}
-.occasion-grid .theme-chips span{font-size:9px!important}
+.occasion-grid .occasion-card.just-because p{font-size:11px!important}
+.occasion-grid .theme-chips span{font-size:11px!important}
 .wish-category-grid .wish-category .category-number{font-size:11px!important}
 .wish-category-grid .wish-category .category-art i{font-size:24px!important}
 .wish-category-grid .wish-category h3{font-size:24px!important}
