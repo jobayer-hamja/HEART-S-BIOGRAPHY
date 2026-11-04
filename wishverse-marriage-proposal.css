@@ -1,0 +1,169 @@
+/* Marriage Proposal title card — scoped to this experience only. */
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-experience-main{
+  min-height:calc(100svh - 76px);padding:58px 24px 34px;
+  background:radial-gradient(ellipse at 32% 48%,rgba(214,184,120,.13),transparent 34%),radial-gradient(ellipse at 80% 24%,rgba(185,135,120,.1),transparent 34%),linear-gradient(135deg,#f7f1e8 0%,#eee4d8 48%,#f7f1e8 100%);
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-experience-main:before{
+  background:radial-gradient(ellipse at 44% 48%,rgba(214,184,120,.22),transparent 56%),linear-gradient(120deg,transparent 25%,rgba(255,255,255,.26),transparent 76%);
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-back-link{color:#5a1728}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-back-link:hover{color:#8a4358}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-title-card{
+  width:min(1040px,100%);border-color:rgba(214,184,120,.8);
+  background:linear-gradient(135deg,#e6d3a4,#b98778 42%,#5a1728 100%);
+  box-shadow:0 26px 70px rgba(50,19,31,.2),0 0 70px rgba(214,184,120,.15);
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-title-card:hover{box-shadow:0 31px 78px rgba(50,19,31,.24),0 0 80px rgba(214,184,120,.2)}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{
+  display:grid;grid-template-columns:minmax(250px,.82fr) minmax(0,1.18fr);align-items:center;gap:clamp(24px,5vw,58px);
+  padding:clamp(28px,4vw,48px);text-align:left;
+  background:radial-gradient(ellipse at 18% 50%,rgba(214,184,120,.12),transparent 45%),linear-gradient(135deg,#32131f 0%,#481827 55%,#5a1728 100%);
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{position:relative;display:flex;min-height:390px;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(214,184,120,.35);border-radius:20px;background:radial-gradient(ellipse at 50% 42%,rgba(214,184,120,.22),transparent 50%),linear-gradient(145deg,rgba(255,255,255,.07),rgba(13,5,10,.2));box-shadow:inset 0 1px rgba(255,255,255,.1)}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual:before,.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual:after{position:absolute;content:"";width:210px;height:210px;border:1px solid rgba(214,184,120,.16);border-radius:50%;pointer-events:none}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual:before{top:-120px;left:-105px}.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual:after{right:-120px;bottom:-130px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual-kicker,.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual-caption{position:relative;z-index:1;color:#e8d09a;text-align:center;font:700 9px/1.5 "DM Sans",sans-serif;letter-spacing:.2em}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-ring-art{position:relative;z-index:1;width:min(100%,330px);height:auto;overflow:visible;animation:proposal-ring-reveal .9s cubic-bezier(.2,.75,.25,1) both}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual-caption{font:500 10px/1.6 "Playfair Display",Georgia,serif;letter-spacing:.16em;color:#f7f1e8}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-copy{min-width:0}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-label{margin-bottom:15px;color:#e8d09a;font-size:9px;letter-spacing:.16em}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-kicker{margin-bottom:8px;color:#e6c995;font-size:9px;letter-spacing:.16em}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-title-card h1{max-width:570px;color:#fff7e9;font-size:clamp(38px,5vw,62px);line-height:.99;text-shadow:0 3px 20px rgba(0,0,0,.2)}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-subtitle{margin:12px 0 0;color:#e8c4cc;font-size:clamp(16px,2vw,20px);line-height:1.35}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-divider{justify-content:flex-start;margin:15px 0;color:#d6b878}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-description{max-width:520px;margin:0;color:rgba(255,247,233,.86);font-size:12px;line-height:1.65}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 15px;max-width:540px;margin:17px 0 20px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights li{padding-left:15px;color:#f6ead9;font-size:10px;line-height:1.4}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights li:before{content:"✦";color:#d6b878}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .single-wish-package{display:none!important}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-cta{min-height:48px;padding:0 22px;border-color:#e2ca8e;background:linear-gradient(115deg,#d6b878,#e8d09a);box-shadow:0 8px 22px rgba(12,4,8,.22),inset 0 1px rgba(255,255,255,.55);color:#32131f;font-size:11px;letter-spacing:.07em}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-cta:hover,.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-cta:focus-visible{border-color:#f7e6bb;background:linear-gradient(115deg,#e2ca8e,#f0dfb1);color:#32131f;box-shadow:0 12px 28px rgba(12,4,8,.27),0 0 22px rgba(214,184,120,.2)}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-signoff{margin-top:12px;color:rgba(247,241,232,.62)}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-ornament{color:rgba(214,184,120,.8)}
+@keyframes proposal-ring-reveal{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:760px){
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-experience-main{min-height:calc(100svh - 66px);padding:54px 14px 24px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-back-link{top:15px;left:16px;font-size:11px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{grid-template-columns:1fr;gap:15px;padding:18px 20px 20px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{min-height:175px;border-radius:15px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-ring-art{width:min(100%,220px);max-height:150px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual-kicker{font-size:8px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual-caption{font-size:8px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-label{margin-bottom:8px;font-size:8px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-kicker{margin-bottom:5px;font-size:8px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-title-card h1{font-size:clamp(34px,9vw,48px)}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-subtitle{margin-top:7px;font-size:15px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-divider{margin:9px 0}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-description{font-size:11px;line-height:1.5}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights{gap:6px 10px;margin:11px 0 13px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights li{font-size:9px;padding-left:12px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-cta{width:100%;min-height:44px;font-size:10px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-signoff{display:none}
+}
+@media(max-width:380px){.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{padding:15px}.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{min-height:145px}.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-ring-art{max-height:125px}.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-ring-art{animation:none}}
+/* Latest refinement: compact Birthday-sized card, green editorial tint, horizontal features. */
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-experience-main{
+  background:radial-gradient(ellipse at 50% 45%,rgba(233,165,177,.22),transparent 52%),linear-gradient(135deg,#fbf1e6,#f7e6e2 54%,#fbf1e6);
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-experience-main:before{
+  background:radial-gradient(ellipse at 50% 45%,rgba(214,184,120,.16),transparent 58%),linear-gradient(115deg,transparent 25%,rgba(255,255,255,.3),transparent 72%);
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-title-card{
+  width:min(540px,100%);border-color:rgba(214,184,120,.78);
+  background:linear-gradient(145deg,#d6b878,#6d806e 46%,#29463d 100%);
+  box-shadow:0 22px 54px rgba(42,12,25,.24),0 0 55px rgba(233,165,177,.2);
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-title-card:hover{box-shadow:0 27px 62px rgba(42,12,25,.26),0 0 62px rgba(233,165,177,.22)}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{
+  display:flex;flex-direction:column;gap:13px;padding:23px 30px 22px;text-align:center;
+  background:radial-gradient(ellipse at 50% 0%,rgba(233,165,177,.07),transparent 42%),linear-gradient(145deg,#3a1324,#52192d 58%,#2a0c19);
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{
+  width:100%;min-height:136px;flex:none;border-color:rgba(214,184,120,.32);border-radius:15px;
+  background:radial-gradient(ellipse at 50% 44%,rgba(196,207,171,.2),transparent 52%),linear-gradient(145deg,rgba(255,255,255,.07),rgba(9,24,19,.22));
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-ring-art{width:150px;height:118px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual-kicker{font-size:7px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual-caption{font-size:8px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-copy{width:100%}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-label{margin-bottom:8px;color:#e3ce98;font-size:8px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-kicker{margin-bottom:5px;color:#d6c990;font-size:8px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-title-card h1{max-width:none;color:#fff7e9;font-size:clamp(34px,6vw,48px);line-height:1.02}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-subtitle{margin:8px auto 0;color:#d9dfc8;font-size:16px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-divider{justify-content:center;margin:9px 0;color:#d6b878}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-description{font-size:11px;line-height:1.55;color:rgba(250,247,233,.86)}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:470px;margin:4px auto 5px;
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights li{
+  padding:5px 9px;border:1px solid rgba(214,184,120,.3);border-radius:999px;
+  background:rgba(237,241,224,.08);color:#f5f0dd;font-size:9px;line-height:1.25;text-align:center;
+}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights li:before{content:"✦";position:static;margin-right:5px;color:#d6b878;font-size:8px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-cta{min-height:45px;background:linear-gradient(110deg,#d6b878,#e4d39f);color:#4b1a2d}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-cta:hover,.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-cta:focus-visible{background:linear-gradient(110deg,#e2d19a,#f0e5bf);color:#4b1a2d}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-signoff{margin-top:0;color:rgba(238,236,215,.68)}
+@media(max-width:760px){
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-experience-main{padding:52px 14px 22px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{gap:10px;padding:17px 20px 18px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{min-height:112px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-ring-art{width:132px;height:94px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-title-card h1{font-size:clamp(31px,8.4vw,42px)}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-subtitle{font-size:14px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights{gap:5px;margin:2px auto 3px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights li{padding:4px 7px;font-size:8px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-card-signoff{display:none}
+}
+/* Slightly taller proposal card, preserving its compact width and horizontal feature chips. */
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{gap:17px;padding-top:30px;padding-bottom:30px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{min-height:158px}
+@media(max-width:760px){
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{gap:13px;padding-top:22px;padding-bottom:24px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{min-height:126px}
+}
+/* Additional vertical breathing room requested for the proposal title card. */
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{gap:20px;padding-top:38px;padding-bottom:38px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{min-height:178px}
+@media(max-width:760px){
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{gap:15px;padding-top:28px;padding-bottom:30px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-visual{min-height:142px}
+}
+/* Engagement symbolism placed in the background atmosphere, outside the card. */
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-symbol{position:absolute;z-index:0;display:grid;place-items:center;color:rgba(177,145,83,.3);pointer-events:none;filter:drop-shadow(0 2px 7px rgba(177,145,83,.12));animation:proposal-symbol-drift 8s ease-in-out infinite}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-symbol svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-rings{width:72px;height:48px;left:8%;top:25%}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-diamond{width:38px;height:42px;right:9%;top:27%;animation-delay:1.2s}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-promise{left:13%;bottom:21%;font:30px/1 Georgia,serif;animation-delay:2.2s}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-spark{right:14%;bottom:18%;font:19px/1 Georgia,serif;animation-delay:3.1s}
+@keyframes proposal-symbol-drift{0%,100%{transform:translateY(0) rotate(-3deg);opacity:.7}50%{transform:translateY(-7px) rotate(3deg);opacity:1}}
+@media(max-width:760px){
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-rings{width:43px;height:30px;left:4%;top:23%}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-diamond{width:25px;height:29px;right:4%;top:24%}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-promise{left:5%;bottom:11%;font-size:21px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-spark{right:7%;bottom:10%;font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-symbol{animation:none}}
+/* Make the proposal background emblems clearly visible and give the title card the shared linen finish. */
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-page-symbols{z-index:0!important}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-title-card{position:relative;z-index:1}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .birthday-back-link{z-index:2}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-symbol{color:rgba(126,91,43,.72);opacity:1;filter:drop-shadow(0 3px 8px rgba(80,57,28,.2))}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-rings{width:112px;height:76px;left:7%;top:21%}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-diamond{width:62px;height:68px;right:8%;top:23%}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-promise{left:12%;bottom:16%;font-size:48px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-spark{right:13%;bottom:14%;font-size:34px}
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-card-inner{
+  background-color:#52192d;
+  background-image:radial-gradient(ellipse at 50% 0%,rgba(233,165,177,.07),transparent 42%),linear-gradient(145deg,#3a1324,#52192d 58%,#2a0c19);
+  background-size:auto,auto;background-repeat:no-repeat,no-repeat;
+}
+@media(max-width:760px){
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-rings{width:64px;height:44px;left:2%;top:18%}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-diamond{width:40px;height:44px;right:2%;top:20%}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-promise{left:3%;bottom:8%;font-size:32px}
+ .birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-base-spark{right:4%;bottom:7%;font-size:24px}
+}
+
+/* Keep Marriage Proposal features in a single vertical stack */
+.birthday-experience-page[data-wish-experience="marriage-proposal"] .proposal-highlights{grid-template-columns:1fr!important}

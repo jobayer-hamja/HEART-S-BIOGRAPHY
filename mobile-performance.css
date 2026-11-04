@@ -1,0 +1,64 @@
+/* Heart's Biography — mobile performance layer
+   Keeps the existing visual identity while reducing expensive mobile paint/compositing. */
+@media (max-width: 760px) {
+  html { scroll-behavior: auto; }
+  body { background-attachment: scroll !important; }
+
+  /* Fixed paper textures and fixed blurred glows can trigger repeated repaints while scrolling. */
+  .site-waffle-texture {
+    position: absolute !important;
+    inset: 0 auto auto 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100vh;
+  }
+  body::before,
+  body::after {
+    position: absolute !important;
+    animation: none !important;
+    filter: none !important;
+    opacity: .2;
+  }
+
+  /* Glass blur is visually subtle but expensive on mid-range phones. The gradient,
+     borders and shadows remain, so cards keep their original visual character. */
+  *,
+  *::before,
+  *::after {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .occasion-grid .occasion-card,
+  .wish-category-grid .wish-category,
+  .package-card,
+  .builder-shell,
+  .builder-rail,
+  .wv-header,
+  .topbar {
+    box-shadow: 0 6px 18px rgba(39, 17, 26, .10), inset 0 1px 0 rgba(255,255,255,.28);
+  }
+
+  /* Avoid hover-only movement effects on touch devices. */
+  .product:hover,
+  .occasion-grid .occasion-card:hover,
+  .wish-category-grid .wish-category:hover {
+    transform: none;
+  }
+
+  /* Keep interaction animations short and responsive on touch screens. */
+  button, a, .product, .occasion-card, .wish-category {
+    transition-duration: .16s !important;
+  }
+}
+
+/* Respect the visitor's system-level reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
