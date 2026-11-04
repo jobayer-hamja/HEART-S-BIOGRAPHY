@@ -388,6 +388,17 @@
 (function () {
   if (window.__hbPageElementInspectorRequested) return;
   window.__hbPageElementInspectorRequested = true;
+  /* Performance: the inspector is a design/debug tool, so it only loads on request.
+     Open any page with ?inspect=1 to turn it on (stays on for this browser session),
+     or ?inspect=0 to turn it off. */
+  var wantInspector = false;
+  try {
+    var qs = new URLSearchParams(window.location.search).get("inspect");
+    if (qs === "1") window.sessionStorage.setItem("hbInspector", "1");
+    if (qs === "0") window.sessionStorage.removeItem("hbInspector");
+    wantInspector = window.sessionStorage.getItem("hbInspector") === "1";
+  } catch (e) { wantInspector = false; }
+  if (!wantInspector) return;
   var navigationScript = document.currentScript;
   if (!navigationScript || !navigationScript.src) {
     var scripts = document.querySelectorAll('script[src*="site-navigation.js"]');

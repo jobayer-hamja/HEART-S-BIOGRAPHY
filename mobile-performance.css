@@ -62,3 +62,62 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ---- v2 additions ---- */
+@media (max-width: 760px) {
+  /* Instant taps: removes the double-tap-zoom wait and the grey flash on touch. */
+  a, button, input, select, textarea, label, .product, .occasion-card, .wish-category {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Endless background animations keep the phone's GPU busy even when nobody looks at them. */
+  .birthday-atmosphere i,
+  .love-heart svg,
+  .proposal-base-symbol {
+    animation: none !important;
+  }
+
+  /* Soft glows built with blur() are repainted on every frame during scroll. */
+  .birthday-glow,
+  [class*="glow"] {
+    filter: none !important;
+  }
+
+  /* Big blurred shadows are the next most expensive paint after backdrop-filter. */
+  [class*="card"], .experience-section, .builder-section {
+    box-shadow: 0 4px 14px rgba(39, 17, 26, .12) !important;
+  }
+
+  /* Skip rendering work for the footer until it is close to the screen. */
+  .footer {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 260px;
+  }
+
+  /* Keep text visible immediately while web fonts arrive. */
+  body { text-rendering: optimizeSpeed; }
+}
+
+/* ---- v3: lighter card textures on phones (one tiled layer instead of two) ---- */
+@media (max-width: 760px) {
+  .product:after {
+    background-image: var(--hb-waffle-soft) !important;
+    background-size: var(--hb-home-card-weave) !important;
+  }
+  .occasion-grid .occasion-card:before {
+    background-image: var(--hb-waffle-soft), linear-gradient(145deg,var(--tint1),var(--tint2) 52%,rgba(255,255,255,.04)) !important;
+    background-size: var(--hb-memory-card-weave), auto !important;
+    background-repeat: repeat, no-repeat !important;
+  }
+  .wish-category-grid .wish-category-card:before {
+    background-image: var(--hb-waffle-soft), linear-gradient(145deg,var(--tone1),var(--tone2) 55%,rgba(255,255,255,.16)) !important;
+    background-size: var(--hb-wish-card-weave), auto !important;
+    background-repeat: repeat, no-repeat !important;
+  }
+  #wish-category-selection-view .wish-category-grid .wish-category .category-art:before {
+    background-image: var(--hb-waffle-soft) !important;
+    background-size: var(--hb-wish-card-weave) !important;
+    background-repeat: repeat !important;
+  }
+}
